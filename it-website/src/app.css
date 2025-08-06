@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@plugin "daisyui" {
+	themes: all;
+}
+
+@layer base {
+	body {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Nunito', sans-serif;
+	}
+}
+
+/* Define custom font utilities */
+@layer utilities {
+	.font-heading {
+		font-family: 'Nunito', sans-serif;
+	}
+
+	.font-body {
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+.nunito-bold {
+	font-family: 'Nunito', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+}
