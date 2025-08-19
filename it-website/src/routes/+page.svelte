@@ -24,7 +24,7 @@
 </script>
 
 <div id="home-body" class="">
-	<div id="hero" class="flex h-[93dvh] items-center justify-center text-center">
+	<div id="hero" class="flex h-[92dvh] items-center justify-center text-center md:h-[93dvh]">
 		<p class="text-7xl">One stop for all your IT needs</p>
 		<p></p>
 	</div>

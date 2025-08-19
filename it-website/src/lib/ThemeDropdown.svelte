@@ -68,7 +68,7 @@
 	<div class="flex items-center gap-3">
 		<select
 			id="theme-select"
-			class="select select-bordered flex-1"
+			class="select flex-1 rounded-2xl focus-within:outline-none focus-within:ring-0"
 			bind:value={currentTheme}
 			on:change={handleThemeChange}
 		>
