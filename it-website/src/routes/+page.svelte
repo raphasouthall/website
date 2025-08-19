@@ -32,8 +32,8 @@
 		class="bg-primary text-primary-content flex h-screen flex-col items-center justify-center rounded-2xl p-2 text-center"
 	>
 		<p
-			class="font-heading text-primary-content/60 h-10 animate-pulse text-2xl transition-opacity duration-300 {isAtTop
-				? 'opacity-100'
+			class="font-heading text-primary-content h-10 text-2xl transition-opacity duration-300 {isAtTop
+				? 'animate-pulse opacity-100'
 				: 'opacity-0'}"
 		>
 			scroll for more

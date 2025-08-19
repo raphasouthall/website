@@ -10,7 +10,7 @@
 	<!-- Fixed Nav -->
 	<div
 		id="nav"
-		class="bg-base-100/70 fixed left-4 right-4 top-3 z-50 flex h-20 items-center rounded-2xl p-4 backdrop-blur-[2px] md:justify-start md:gap-2"
+		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex h-20 items-center rounded-xl p-4 backdrop-blur-[2px] md:justify-start md:gap-2"
 	>
 		<div id="mobile" class="flex w-full items-center justify-between md:hidden">
 			<a href="/" id="logo" class="flex select-none items-center">
@@ -179,7 +179,7 @@
 			</div>
 		</div>
 
-		<div id="content" class="mx-2 my-1 min-h-0 flex-1 overflow-auto rounded-2xl">
+		<div id="content" class="mx-1 my-1 min-h-0 flex-1 overflow-auto rounded-2xl">
 			<slot />
 		</div>
 	</div>
