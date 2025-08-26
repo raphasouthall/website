@@ -67,7 +67,7 @@
 						></path>
 					</g>
 				</svg>
-				<div id="logo-text" class="nunito-bold text-xl">SOLID</div>
+				<div id="logo-text" class="nunito-bold text-xl">SOLID+</div>
 			</a>
 			<button
 				class="btn btn-sm btn-primary hover:drop-shadow-white/50 drop-shadow"
