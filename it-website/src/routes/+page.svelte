@@ -36,7 +36,9 @@
 			<p>Your Technology Partner</p>
 			<p class="text-xl md:text-4xl">Not Just Another IT Company</p>
 		</div>
-		<div class="rounded-box md: flex h-full flex-1 items-center justify-center text-center">
+		<div
+			class="rounded-box md: flex h-full flex-1 select-none items-center justify-center text-center"
+		>
 			<Embed3D />
 		</div>
 	</div>
