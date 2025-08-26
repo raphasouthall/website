@@ -80,7 +80,7 @@
 		</select>
 
 		<!-- Theme color preview -->
-		<!-- <div class="flex-shrink-0">
+		<div class="flex-shrink-0">
 			<div
 				data-theme={currentTheme}
 				class="bg-base-100 border-base-300 flex gap-1 rounded-lg border p-2"
@@ -91,6 +91,6 @@
 				<div class="bg-accent h-3 w-3 rounded"></div>
 				<div class="bg-neutral h-3 w-3 rounded"></div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </div>
