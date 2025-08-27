@@ -32,7 +32,7 @@
 		class="flex h-[81dvh] flex-col items-center justify-center gap-2 text-center text-6xl md:flex-row"
 	>
 		<div
-			class="flex h-1/2 flex-col items-center justify-center gap-6 pl-16 text-center text-6xl font-light md:mb-20 md:h-full md:w-1/2 md:items-start md:text-8xl"
+			class="flex h-1/2 flex-col items-center justify-center gap-6 px-2 text-center text-6xl font-light md:mb-20 md:h-full md:w-1/2 md:items-start md:pl-16 md:text-8xl"
 		>
 			<div class="flex flex-col">
 				<p>Empathy</p>
@@ -42,7 +42,7 @@
 				</div>
 				<p>Expertise</p>
 			</div>
-			<p class="text-base-content/70 text-start text-xl md:text-3xl">
+			<p class="text-base-content/70 text-xl md:text-start md:text-3xl">
 				The technology partner who speaks your language
 			</p>
 			<div class="flex items-center gap-6 md:justify-start">
