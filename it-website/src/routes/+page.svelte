@@ -3,6 +3,7 @@
 	let isAtTop = true;
 	let contentElement: HTMLElement;
 	import Embed3D from '$lib/3d-embed.svelte';
+	import Sun from '$lib/Sun.svelte';
 
 	onMount(() => {
 		// Get the scrollable content element from the layout
@@ -24,26 +25,44 @@
 	});
 </script>
 
-<div id="home-body" class="flex flex-col">
-	<div class="h-22"></div>
+<div id="home-body" class="flex flex-col gap-2">
+	<div class="h-24"></div>
 	<div
 		id="hero"
-		class="flex h-[82dvh] flex-col items-center justify-center gap-2 p-2 text-center text-6xl md:h-[83dvh] md:flex-row"
+		class="flex h-[81dvh] flex-col items-center justify-center gap-2 text-center text-6xl md:flex-row"
 	>
 		<div
-			class="flex flex-col items-center justify-center gap-2 p-2 text-center text-3xl md:w-1/2 md:text-6xl"
+			class="flex h-1/2 flex-col items-center justify-center gap-6 pl-16 text-center text-6xl font-light md:mb-20 md:h-full md:w-1/2 md:items-start md:text-8xl"
 		>
-			<p>Your Technology Partner</p>
-			<p class="text-xl md:text-4xl">Not Just Another IT Company</p>
+			<div class="flex flex-col">
+				<p>Empathy</p>
+				<div class="flex items-center gap-4">
+					<Sun />
+					<p class="text-warning font-medium">Meets</p>
+				</div>
+				<p>Expertise</p>
+			</div>
+			<p class="text-base-content/70 text-start text-xl md:text-3xl">
+				The technology partner who speaks your language
+			</p>
+			<div class="flex items-center gap-6 md:justify-start">
+				<button class="btn btn-accent md:btn-xl">Get Started</button>
+				<div class="flex flex-col p-2 text-start">
+					<p class="text-base md:text-2xl">100+</p>
+					<p class="text-xs md:text-xl">Happy Customers</p>
+				</div>
+			</div>
 		</div>
+
 		<div
-			class="rounded-box md: flex h-full flex-1 select-none items-center justify-center text-center"
+			class="bg-secondary mb-2 flex h-full flex-1 select-none items-center justify-center rounded-xl p-4 text-center"
 		>
-			<Embed3D />
+			Placeholder for illustration
+			<!-- <Embed3D /> -->
 		</div>
 	</div>
 	<div
-		class="bg-primary text-primary-content flex h-screen flex-col items-center justify-center rounded-2xl p-2 text-center"
+		class="bg-primary text-primary-content flex h-[100dvh] flex-col items-center justify-center rounded-2xl p-2 text-center"
 	>
 		<p
 			class="font-heading text-primary-content h-10 text-2xl transition-opacity duration-300 {isAtTop
