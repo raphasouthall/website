@@ -25,14 +25,14 @@
 	});
 </script>
 
-<div id="home-body" class="flex flex-col gap-2">
+<div id="home-body" class="flex flex-col md:gap-2">
 	<div class="h-24"></div>
 	<div
 		id="hero"
-		class="flex h-[81dvh] flex-col items-center justify-center gap-2 text-center text-6xl md:flex-row"
+		class="flex h-[77dvh] flex-col items-center justify-center gap-2 text-center text-6xl md:h-[81dvh] md:flex-row"
 	>
 		<div
-			class="flex h-1/2 flex-col items-center justify-center gap-6 px-2 text-center text-6xl font-light md:mb-20 md:h-full md:w-1/2 md:items-start md:pl-16 md:text-8xl"
+			class="flex flex-col items-center justify-center gap-6 px-2 text-center text-6xl font-light md:mb-20 md:h-full md:w-1/2 md:items-start md:pl-16 md:text-8xl"
 		>
 			<div class="flex flex-col">
 				<p>Empathy</p>
@@ -55,7 +55,7 @@
 		</div>
 
 		<div
-			class="bg-secondary mb-2 flex h-full flex-1 select-none items-center justify-center rounded-xl p-4 text-center"
+			class="bg-secondary mb-2 hidden h-full flex-1 select-none items-center justify-center rounded-xl p-4 text-center md:flex"
 		>
 			Placeholder for illustration
 			<!-- <Embed3D /> -->
