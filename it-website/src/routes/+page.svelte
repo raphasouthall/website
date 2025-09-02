@@ -4,6 +4,7 @@
 	let contentElement: HTMLElement;
 	import Embed3D from '$lib/3d-embed.svelte';
 	import Sun from '$lib/Sun.svelte';
+	import Illustration from '$lib/Illustration.svelte';
 
 	onMount(() => {
 		// Get the scrollable content element from the layout
@@ -29,35 +30,46 @@
 	<div class="h-24"></div>
 	<div
 		id="hero"
-		class="flex h-[77dvh] flex-col items-center justify-center gap-2 text-center text-6xl md:h-[81dvh] md:flex-row"
+		class="flex h-[77dvh] w-full flex-col items-center justify-center gap-2 text-center text-6xl md:h-[80dvh] md:flex-row"
 	>
 		<div
-			class="flex flex-col items-center justify-center gap-6 px-2 text-center text-6xl font-light md:mb-20 md:h-full md:w-1/2 md:items-start md:pl-16 md:text-8xl"
+			id="hero-left"
+			class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2 text-center text-6xl font-light md:h-full md:w-1/2 md:items-start md:justify-between md:px-20 md:text-8xl"
 		>
-			<div class="flex flex-col">
-				<p>Empathy</p>
+			<div class="flex h-2/3 flex-col items-center justify-center md:items-start md:text-start">
+				<p class="">Support</p>
 				<div class="flex items-center gap-4">
 					<Sun />
 					<p class="text-warning font-medium">Meets</p>
 				</div>
-				<p>Expertise</p>
+				<p>Empathy</p>
 			</div>
-			<p class="text-base-content/70 text-xl md:text-start md:text-3xl">
-				The technology partner who speaks your language
-			</p>
-			<div class="flex items-center gap-6 md:justify-start">
-				<button class="btn btn-accent md:btn-xl">Get Started</button>
-				<div class="flex flex-col p-2 text-start">
-					<p class="text-base md:text-2xl">100+</p>
-					<p class="text-xs md:text-xl">Happy Customers</p>
+			<div class="flex flex-1 flex-col gap-2">
+				<p class="text-base-content/70 text-xl md:text-start md:text-3xl">
+					IT support that actually makes sense
+				</p>
+				<div class="flex items-center justify-center gap-6 md:justify-start">
+					<button class="btn btn-accent md:btn-xl">Get Started</button>
+					<div class="flex flex-col p-2 text-start">
+						<p class="text-base md:text-2xl">100+</p>
+						<p class="text-xs md:text-xl">Happy Customers</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div
-			class="bg-secondary mb-2 hidden h-full flex-1 select-none items-center justify-center rounded-xl p-4 text-center md:flex"
+			id="hero-right"
+			class="hidden h-full flex-1 select-none items-center justify-center gap-4 overflow-hidden rounded-xl p-4 text-center md:flex"
 		>
-			Placeholder for illustration
+			<div class="bg-secondary flex size-full justify-center overflow-hidden rounded-xl pt-2">
+				<Illustration />
+			</div>
+			<div class="flex h-full w-full flex-col gap-4 rounded-xl">
+				<div class="bg-primary h-1/2 w-full rounded-xl"></div>
+				<div class="bg-accent h-1/2 w-full rounded-xl"></div>
+			</div>
+
 			<!-- <Embed3D /> -->
 		</div>
 	</div>

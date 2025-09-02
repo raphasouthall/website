@@ -80,7 +80,7 @@
 		</select>
 
 		<!-- Theme color preview -->
-		<div class="flex-shrink-0">
+		<div class="hidden flex-shrink-0 md:block">
 			<div
 				data-theme={currentTheme}
 				class="bg-base-100 border-base-300 flex gap-1 rounded-lg border p-2"
