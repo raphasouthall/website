@@ -1,29 +1,6 @@
-<script lang="ts">
-	export let size: 'sm' | 'md' | 'lg' = 'md';
-	export let showText = true;
-	export let textVariant: 'primary' | 'base' = 'base';
-
-	const sizeClasses = {
-		sm: 'size-8',
-		md: 'size-10',
-		lg: 'size-12'
-	};
-
-	const textSizeClasses = {
-		sm: 'text-lg',
-		md: 'text-xl',
-		lg: 'text-2xl'
-	};
-
-	const textColorClasses = {
-		primary: 'text-primary',
-		base: ''
-	};
-</script>
-
 <a href="/" class="flex select-none items-center">
 	<svg
-		class="fill-base-content mb-1 {sizeClasses[size]}"
+		class="fill-base-content mb-1 size-8 md:size-10 lg:size-12 2xl:size-14 3xl:size-16 4xl:size-18"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="100 100 500 500"
 	>
@@ -73,9 +50,7 @@
 			></path>
 		</g>
 	</svg>
-	{#if showText}
-		<div class="nunito-bold {textSizeClasses[size]} {textColorClasses[textVariant]}">
-			<slot>SOLID</slot>
-		</div>
-	{/if}
+	<div class="nunito-bold">
+		<p class="text-sm md:text-base 2xl:text-4xl">SOLID+</p>
+	</div>
 </a>

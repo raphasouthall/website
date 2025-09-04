@@ -5,6 +5,11 @@
 	themes: all;
 }
 
+@theme {
+	--breakpoint-3xl: 120rem;
+	--breakpoint-4xl: 130rem;
+}
+
 @layer base {
 	body {
 		font-family: 'Roboto', sans-serif;
@@ -36,4 +41,32 @@
 	font-optical-sizing: auto;
 	font-weight: 900;
 	font-style: normal;
+}
+
+.btn-responsive-ghost {
+	@apply btn rounded-xl btn-ghost hover:btn-secondary border-0 2xl:text-2xl 2xl:btn-lg;
+}
+
+.btn-responsive-primary {
+	@apply btn rounded-xl btn-primary border-0 text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-2xl;
+}
+
+.btn-cta {
+	@apply btn rounded-xl btn-accent border-0 md:btn-lg lg:btn-xl xl:text-2xl;
+}
+
+.text-hero-h1 {
+	@apply text-6xl md:text-8xl lg:text-9xl xl:text-[6rem] 2xl:text-[8rem] 3xl:text-[10rem] 4xl:text-[12rem];
+}
+
+.text-hero-h2 {
+	@apply text-xl md:text-2xl lg:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl;
+}
+
+.text-hero-h3 {
+	@apply text-lg md:text-2xl lg:text-4xl xl:text-[1.75rem] 2xl:text-[2.5rem] 3xl:text-[3.5rem] 4xl:text-[4.5rem];
+}
+
+.text-hero-h4 {
+	@apply text-base md:text-xl lg:text-3xl xl:text-[1.5rem] 2xl:text-[2rem] 3xl:text-[2.75rem] 4xl:text-[3.5rem];
 }

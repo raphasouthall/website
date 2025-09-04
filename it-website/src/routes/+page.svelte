@@ -34,9 +34,15 @@
 	>
 		<div
 			id="hero-left"
-			class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2 text-center text-6xl font-light md:h-full md:w-1/2 md:items-start md:justify-between md:px-20 md:text-8xl"
+			class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2 text-center text-6xl font-light
+			md:h-full md:w-1/2 md:items-start md:justify-between md:px-20 md:text-8xl"
 		>
-			<div class="flex h-2/3 flex-col items-center justify-center md:items-start md:text-start">
+			<div
+				class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2
+				text-center text-hero-h1 font-light
+				md:h-2/3 md:items-start md:text-8xl
+				"
+			>
 				<p class="">Support</p>
 				<div class="flex items-center gap-4">
 					<Sun />
@@ -44,15 +50,15 @@
 				</div>
 				<p>Empathy</p>
 			</div>
-			<div class="flex flex-1 flex-col gap-2">
-				<p class="text-base-content/70 text-xl md:text-start md:text-3xl">
-					IT support that actually makes sense
-				</p>
+			<div
+				class="flex flex-1 flex-col w-full items-center md:items-start md:justify-center gap-6 text-hero-h2"
+			>
+				<p class="text-base-content/70 md:text-start">IT support that actually makes sense</p>
 				<div class="flex items-center justify-center gap-6 md:justify-start">
-					<button class="btn btn-accent md:btn-xl">Get Started</button>
-					<div class="flex flex-col p-2 text-start">
-						<p class="text-base md:text-2xl">100+</p>
-						<p class="text-xs md:text-xl">Happy Customers</p>
+					<button class="btn-cta">Get Started</button>
+					<div class="flex w-full flex-col p-2 text-start">
+						<p class="">100+</p>
+						<p class="text-hero-h4">Happy Customers</p>
 					</div>
 				</div>
 			</div>
