@@ -2,7 +2,103 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui" {
-	themes: all;
+	/* themes: all; */
+}
+
+@plugin "daisyui/theme" {
+	name: 'light';
+	default: false;
+	/* prefersdark: false; */
+	color-scheme: 'light';
+	/* Base colors using your light cream foundation */
+	--color-base-100: oklch(98.1% 0.004 107); /* Your #f9f9f6 */
+	--color-base-200: oklch(96% 0.006 107); /* Slightly darker */
+	--color-base-300: oklch(93% 0.008 107); /* Even darker for subtle contrast */
+	--color-base-content: oklch(25% 0.02 267); /* Dark blue-gray for text */
+
+	/* Primary: Complementary blue-purple to balance the warm coral/yellow */
+	--color-primary: oklch(55% 0.15 267);
+	--color-primary-content: oklch(98% 0.005 267);
+
+	/* Secondary: Your coral red */
+	--color-secondary: oklch(71% 0.185 33.9); /* Your #ff6d4d */
+	--color-secondary-content: oklch(98% 0.01 30);
+
+	/* Accent: Your golden yellow */
+	--color-accent: oklch(81.8% 0.17 77.9); /* Your #ffb300 */
+	--color-accent-content: oklch(25% 0.05 80);
+
+	/* Neutral using your dark base color family */
+	--color-neutral: oklch(30% 0.05 267);
+	--color-neutral-content: oklch(95% 0.01 267);
+
+	/* System colors */
+	--color-info: oklch(70% 0.15 240);
+	--color-info-content: oklch(25% 0.05 240);
+	--color-success: oklch(75% 0.15 150);
+	--color-success-content: oklch(25% 0.05 150);
+	--color-warning: oklch(80% 0.16 85); /* Harmonizes with your accent */
+	--color-warning-content: oklch(25% 0.05 85);
+	--color-error: oklch(68% 0.18 20); /* Harmonizes with your secondary */
+	--color-error-content: oklch(95% 0.01 20);
+
+	/* Design tokens */
+	--radius-selector: 0.5rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.5rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+	--border: 1px;
+	--depth: 1;
+	--noise: 0;
+}
+
+@plugin "daisyui/theme" {
+	name: 'dark';
+	default: false;
+	/* prefersdark: true; */
+	color-scheme: 'dark';
+	/* Base colors using your dark blue-gray foundation */
+	--color-base-100: oklch(35.3% 0.057 267.3); /* Your #2e3a59 */
+	--color-base-200: oklch(32% 0.05 267); /* Darker variation */
+	--color-base-300: oklch(28% 0.04 267); /* Even darker */
+	--color-base-content: oklch(95% 0.01 107); /* Light cream for text */
+
+	/* Primary: Brighter, more vibrant version for dark theme */
+	--color-primary: oklch(65% 0.2 267);
+	--color-primary-content: oklch(95% 0.01 267);
+
+	/* Secondary: Adjusted coral for dark backgrounds */
+	--color-secondary: oklch(75% 0.19 33.9); /* Slightly brighter than light theme */
+	--color-secondary-content: oklch(25% 0.02 33);
+
+	/* Accent: Adjusted golden yellow for dark backgrounds */
+	--color-accent: oklch(85% 0.18 77.9); /* Slightly brighter for contrast */
+	--color-accent-content: oklch(25% 0.03 77);
+
+	/* Neutral */
+	--color-neutral: oklch(20% 0.03 267);
+	--color-neutral-content: oklch(90% 0.01 267);
+
+	/* System colors optimized for dark theme */
+	--color-info: oklch(75% 0.18 240);
+	--color-info-content: oklch(20% 0.03 240);
+	--color-success: oklch(80% 0.18 150);
+	--color-success-content: oklch(20% 0.03 150);
+	--color-warning: oklch(85% 0.19 85); /* Brighter warning for visibility */
+	--color-warning-content: oklch(20% 0.03 85);
+	--color-error: oklch(72% 0.2 20); /* Brighter error for visibility */
+	--color-error-content: oklch(90% 0.01 20);
+
+	/* Design tokens */
+	--radius-selector: 0.5rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.5rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+	--border: 1px;
+	--depth: 1;
+	--noise: 0;
 }
 
 @theme {
@@ -48,7 +144,7 @@
 }
 
 .btn-responsive-primary {
-	@apply btn rounded-xl btn-primary border-0 text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-2xl;
+	@apply btn rounded-xl btn-primary border-0 text-base 2xl:text-2xl 2xl:btn-lg;
 }
 
 .btn-cta {
