@@ -1,6 +1,6 @@
 <div>
 	<svg
-		class="fill-warning size-14 animate-spin [animation-duration:6s] md:size-20 lg:size-22 xl:size-24 2xl:size-26 3xl:size-28 4xl:size-30"
+		class="fill-warning size-14 md:size-[5cqw] animate-spin [animation-duration:6s]"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 500 500"
 	>

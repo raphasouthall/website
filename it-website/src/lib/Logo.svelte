@@ -1,6 +1,6 @@
 <a href="/" class="flex select-none items-center gap-2">
 	<svg
-		class="fill-base-content size-6 md:size-2 lg:size-8 2xl:size-14 3xl:size-16 4xl:size-18"
+		class="fill-primary hover:fill-secondary transition-colors duration-300 size-logo"
 		viewBox="0 0 190.02206 190.40298"
 		version="1.1"
 		id="svg1"
@@ -37,12 +37,12 @@
 					d="m 0,0 v -3.866 c 0,-1.295 1.05,-2.345 2.345,-2.345 h 19.873 c 0.384,0 0.577,-0.464 0.305,-0.735 L 8.503,-20.967 c -0.91,-0.91 -0.917,-2.383 -0.016,-3.301 l 2.411,-2.456 c 0.907,-0.925 2.392,-0.939 3.316,-0.032 l 14.454,14.177 c 0.256,0.252 0.689,0.066 0.682,-0.294 l -0.367,-20.318 c -0.024,-1.312 1.033,-2.388 2.344,-2.388 h 3.842 c 1.295,0 2.345,1.05 2.345,2.345 v 31.525 c 0,0 0.402,3.671 -3.135,3.751 C 31.44,2.109 9.645,2.287 2.362,2.345 1.06,2.356 0,1.303 0,0"
 					transform="matrix(-2.82826,0,0,-2.82826,196.80176,120.77203)"
 					clip-path="url(#clipPath11)"
-					class="fill-primary animate-pulse"
+					class=""
 				/>
 			</g>
 		</g>
 	</svg>
 	<div class="nunito-bold">
-		<p class="text-sm md:text-xl 2xl:text-4xl">SOLID+</p>
+		<p class="size-logo-text">SOLID+</p>
 	</div>
 </a>

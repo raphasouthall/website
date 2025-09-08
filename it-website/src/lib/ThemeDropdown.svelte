@@ -64,7 +64,7 @@
 	}
 </script>
 
-<div class="form-control w-full max-w-xs">
+<div class="form-control w-full">
 	<div class="flex items-center gap-3">
 		<select
 			id="theme-select"

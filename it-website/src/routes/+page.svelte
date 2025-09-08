@@ -26,34 +26,36 @@
 	});
 </script>
 
-<div id="home-body" class="flex flex-col md:gap-2">
-	<div class="h-24"></div>
+<div id="home-body" class="flex flex-col">
+	<div class="h-[10dvh]"></div>
 	<div
 		id="hero"
-		class="flex h-[77dvh] w-full flex-col items-center justify-center gap-2 text-center text-6xl md:h-[80dvh] md:flex-row"
+		class="flex min-h-[82dvh] h-[82dvh] md:h-[83dvh] w-full flex-col items-center justify-center gap-2 py-2 text-center md:flex-row"
 	>
 		<div
 			id="hero-left"
-			class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2 text-center text-6xl font-light
-			md:h-full md:w-1/2 md:items-start md:justify-between md:px-20 md:text-8xl"
+			class="flex flex-col w-full gap-2 items-center justify-center text-center overflow-hidden p-2 font-light
+			md:h-full md:w-1/2 md:px-10 md:pt-8 md:gap-0"
 		>
 			<div
+				id="headline"
 				class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2
 				text-center text-hero-h1 font-light
-				md:h-2/3 md:items-start md:text-8xl
+				md:h-2/3
 				"
 			>
-				<p class="">Support</p>
-				<div class="flex items-center gap-4">
+				<p class="">Technology</p>
+				<div class="flex items-center justify-center w-full gap-4">
 					<Sun />
-					<p class="text-warning font-medium">Meets</p>
+					<p class="text-warning font-medium">Reliability</p>
 				</div>
-				<p>Empathy</p>
+				<p>Growth</p>
 			</div>
-			<div
-				class="flex flex-1 flex-col w-full items-center md:items-start md:justify-center gap-6 text-hero-h2"
-			>
-				<p class="text-base-content/70 md:text-start">IT support that actually makes sense</p>
+			<div class="flex flex-1 flex-col w-full items-center px-6 md:px-0 md:py-8 gap-6 text-hero-h2">
+				<p class="text-base-content/70 text-hero-h3 md:text-justify">
+					Custom IT solutions that fit your organization. We handle the complexity, you focus on
+					your mission - with clear communication and genuine partnership throughout.
+				</p>
 				<div class="flex items-center justify-center gap-6 md:justify-start">
 					<button class="btn-cta">Get Started</button>
 					<div class="flex w-full flex-col p-2 text-start">

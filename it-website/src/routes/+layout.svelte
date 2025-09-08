@@ -15,7 +15,7 @@
 	>
 		<div id="mobile" class="flex w-full items-center justify-between gap-2 md:hidden">
 			<Logo />
-			<ThemeDropdown />
+			<!-- <ThemeDropdown /> -->
 			<button
 				class="btn btn-sm btn-primary hover:drop-shadow-white/50 drop-shadow"
 				on:click={() => (sidebarOpen = !sidebarOpen)}
