@@ -39,7 +39,7 @@
 		>
 			<div
 				id="headline"
-				class="flex w-full flex-col items-center justify-center gap-6 overflow-hidden p-2
+				class="flex w-full flex-col items-center justify-center gap-3 overflow-hidden p-2
 				text-center text-hero-h1 font-light
 				md:h-2/3
 				"
@@ -53,8 +53,8 @@
 			</div>
 			<div class="flex flex-1 flex-col w-full items-center px-6 md:px-0 md:py-8 gap-6 text-hero-h2">
 				<p class="text-base-content/70 text-hero-h3 md:text-justify">
-					Custom IT solutions that fit your organization. We handle the complexity, you focus on
-					your mission - with clear communication and genuine partnership throughout.
+					Custom IT solutions tailored to your needs, with genuine partnership and clear
+					communication while we manage the technical complexity.
 				</p>
 				<div class="flex items-center justify-center gap-6 md:justify-start">
 					<button class="btn-cta">Get Started</button>
