@@ -7,8 +7,8 @@
 
 @plugin "daisyui/theme" {
 	name: 'light';
-	default: false;
-	/* prefersdark: false; */
+	default: true;
+	prefersdark: false;
 	color-scheme: 'light';
 	/* Base colors using your light cream foundation */
 	--color-base-100: oklch(98.1% 0.004 107); /* Your #f9f9f6 */
@@ -140,7 +140,7 @@
 }
 
 .size-logo {
-	@apply size-8 md:size-8 lg:size-10 2xl:size-14 3xl:size-16 4xl:size-18 text-sm md:text-xl 2xl:text-4xl;
+	@apply size-[4cqh];
 }
 
 .size-logo-text {
@@ -151,12 +151,16 @@
 	@apply btn rounded-xl btn-ghost hover:btn-secondary border-0 2xl:text-2xl 2xl:btn-lg;
 }
 
+.btn-responsive-accent {
+	@apply btn rounded-xl btn-accent border-0 md:text-[1.8cqh];
+}
+
 .btn-responsive-primary {
 	@apply btn rounded-xl btn-primary border-0 text-base 2xl:text-2xl 2xl:btn-lg;
 }
 
 .btn-cta {
-	@apply btn rounded-2xl btn-accent border-0 btn-lg md:text-[3cqh] md:p-[2.5cqh];
+	@apply btn rounded-2xl btn-accent border-0 btn-lg md:text-[2.5cqh] md:p-[2.5cqh];
 }
 
 .text-hero-h1 {

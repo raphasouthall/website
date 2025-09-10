@@ -26,7 +26,7 @@
 	});
 </script>
 
-<div id="home-body" class="flex flex-col">
+<div id="home-body" class="flex flex-col select-none">
 	<div class="h-[10dvh]"></div>
 	<div
 		id="hero"
@@ -34,27 +34,28 @@
 	>
 		<div
 			id="hero-left"
-			class="flex flex-col w-full gap-2 items-center justify-center text-center overflow-hidden p-2 font-light
-			md:h-full md:w-1/2 md:px-10 md:pt-8 md:gap-0"
+			class="flex flex-col w-full gap-6 items-center justify-center text-center overflow-hidden font-light
+			md:h-full md:w-1/2 md:px-[2cqw] md:pt-8 md:gap-4"
 		>
 			<div
 				id="headline"
-				class="flex w-full flex-col items-center justify-center gap-3 overflow-hidden p-2
-				text-center text-hero-h1 font-light
-				md:h-2/3
+				class="flex w-full flex-col items-center justify-center md:items-start md:justify-start gap-3 overflow-hidden
+				text-center text-hero-h1
 				"
 			>
-				<p class="">Technology</p>
-				<div class="flex items-center justify-center w-full gap-4">
-					<Sun />
-					<p class="text-warning font-medium">Reliability</p>
+				<p class="">Technology.</p>
+				<div class="flex items-center justify-center md:justify-start w-full">
+					<p class="text-accent font-medium">Reliability</p>
+					<div class="pt-8"><Sun /></div>
 				</div>
-				<p>Growth</p>
+				<p>Growth.</p>
 			</div>
-			<div class="flex flex-1 flex-col w-full items-center px-6 md:px-0 md:py-8 gap-6 text-hero-h2">
+			<div
+				class="flex flex-1 flex-col w-full items-center md:items-start justify-around px-6 md:px-0 gap-6 text-hero-h2"
+			>
 				<p class="text-base-content/70 text-hero-h3 md:text-justify">
-					Custom IT solutions tailored to your needs, with genuine partnership and clear
-					communication while we manage the technical complexity.
+					IT solutions tailored to your needs, with genuine partnership and clear communication
+					while we manage the technical complexity.
 				</p>
 				<div class="flex items-center justify-center gap-6 md:justify-start">
 					<button class="btn-cta">Get Started</button>
@@ -74,11 +75,11 @@
 				<Illustration />
 			</div>
 			<div class="flex h-full w-full flex-col gap-4 rounded-xl">
-				<div class="bg-primary h-1/2 w-full rounded-xl"></div>
+				<div class="bg-primary h-1/2 w-full rounded-xl overflow-hidden">
+					<!-- <Embed3D /> -->
+				</div>
 				<div class="bg-accent h-1/2 w-full rounded-xl"></div>
 			</div>
-
-			<!-- <Embed3D /> -->
 		</div>
 	</div>
 	<div

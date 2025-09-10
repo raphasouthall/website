@@ -1,4 +1,4 @@
-<div>
+<div class="hover:scale-[1.05] transition-all duration-500 ease-in-out">
 	<svg class="h-full w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
 		<g
 			id="freepik--character-4--inject-120"

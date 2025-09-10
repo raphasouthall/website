@@ -42,7 +42,7 @@
 			</g>
 		</g>
 	</svg>
-	<div class="nunito-bold">
+	<!-- <div class="nunito-bold">
 		<p class="size-logo-text">SOLID+</p>
-	</div>
+	</div> -->
 </a>

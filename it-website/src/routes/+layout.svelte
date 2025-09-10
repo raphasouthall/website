@@ -11,32 +11,32 @@
 	<!-- Fixed Nav -->
 	<div
 		id="nav"
-		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex h-20 items-center rounded-xl p-4 backdrop-blur-[2px] md:justify-start md:gap-2"
+		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex min-h-16 items-center rounded-xl p-4 backdrop-blur-[2px] md:justify-start md:gap-2"
 	>
 		<div id="mobile" class="flex w-full items-center justify-between gap-2 md:hidden">
 			<Logo />
 			<!-- <ThemeDropdown /> -->
 			<button
-				class="btn btn-sm btn-primary hover:drop-shadow-white/50 drop-shadow"
+				class="btn btn-sm btn-ghost hover:drop-shadow-white/50 drop-shadow"
 				on:click={() => (sidebarOpen = !sidebarOpen)}
 			>
 				{#if sidebarOpen}
-					<IconMinus size="16" />
+					<IconMinus size="20" />
 				{:else}
-					<IconMenu3 size="16" />
+					<IconMenu3 size="20" />
 				{/if}
 			</button>
 		</div>
-		<div id="desktop" class="hidden w-full items-center justify-between md:flex 2xl:text-[18rem]">
+		<div id="desktop" class="hidden w-full items-center justify-between md:flex relative">
 			<Logo />
-			<div class="flex w-1/2 justify-around gap-2">
-				<ThemeDropdown />
+			<div id="links" class="flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
+				<!-- <ThemeDropdown /> -->
 				<button class="btn-responsive-ghost">ABOUT</button>
 				<button class="btn-responsive-ghost">SOLUTIONS</button>
 				<button class="btn-responsive-ghost">CASE STUDIES</button>
 				<button class="btn-responsive-ghost">INSIGHTS</button>
 			</div>
-			<button id="CTA" class="btn-responsive-primary">MAKE AN ENQUIRY</button>
+			<button id="CTA" class="btn-responsive-accent">CONTACT US</button>
 		</div>
 	</div>
 

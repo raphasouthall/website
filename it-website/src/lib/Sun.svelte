@@ -1,6 +1,6 @@
 <div>
 	<svg
-		class="fill-warning size-14 md:size-[5cqw] animate-spin [animation-duration:6s]"
+		class="fill-accent size-[2cqh] animate-spin [animation-duration:6s]"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 500 500"
 	>

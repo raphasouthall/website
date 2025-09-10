@@ -3,4 +3,4 @@
 	</script>
 </svelte:head>
 
-<spline-viewer url="https://prod.spline.design/yqEcl35s1MQQV-3K/scene.splinecode"></spline-viewer>
+<spline-viewer url="https://prod.spline.design/I0CmlN-ihjqJ0yB7/scene.splinecode"></spline-viewer>
