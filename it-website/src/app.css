@@ -140,7 +140,7 @@
 }
 
 .size-logo {
-	@apply size-[4cqh];
+	@apply size-[3cqh];
 }
 
 .size-logo-text {
@@ -148,19 +148,19 @@
 }
 
 .btn-responsive-ghost {
-	@apply btn rounded-xl btn-ghost hover:btn-secondary border-0 2xl:text-2xl 2xl:btn-lg;
+	@apply btn rounded-xl btn-ghost hover:btn-secondary border-0 text-[1.5cqh] p-[1.5cqw];
 }
 
 .btn-responsive-accent {
-	@apply btn rounded-xl btn-accent border-0 md:text-[1.8cqh];
+	@apply btn rounded-xl btn-accent border-0 text-[1.5cqh];
 }
 
 .btn-responsive-primary {
-	@apply btn rounded-xl btn-primary border-0 text-base 2xl:text-2xl 2xl:btn-lg;
+	@apply btn rounded-xl btn-primary border-0 text-[1.8cqh];
 }
 
 .btn-cta {
-	@apply btn rounded-2xl btn-accent border-0 btn-lg md:text-[2.5cqh] md:p-[2.5cqh];
+	@apply btn rounded-2xl btn-accent border-0 lg:text-[1.8cqw] lg:p-[2cqw];
 }
 
 .text-hero-h1 {

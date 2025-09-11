@@ -11,15 +11,15 @@
 	<!-- Fixed Nav -->
 	<div
 		id="nav"
-		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex min-h-16 items-center rounded-xl p-4 backdrop-blur-[2px] md:justify-start md:gap-2"
+		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex h-[8dvh] lg:h-[6dvh] overflow-hidden items-center rounded-xl backdrop-blur-[2px] md:justify-start md:gap-2"
 	>
-		<div id="mobile" class="flex w-full items-center justify-between gap-2 md:hidden">
+		<div
+			id="mobile"
+			class="flex size-full items-center justify-between gap-2 md:hidden p-4 min-h-0"
+		>
 			<Logo />
 			<!-- <ThemeDropdown /> -->
-			<button
-				class="btn btn-sm btn-ghost hover:drop-shadow-white/50 drop-shadow"
-				on:click={() => (sidebarOpen = !sidebarOpen)}
-			>
+			<button class="btn-responsive-ghost" on:click={() => (sidebarOpen = !sidebarOpen)}>
 				{#if sidebarOpen}
 					<IconMinus size="20" />
 				{:else}
@@ -27,7 +27,10 @@
 				{/if}
 			</button>
 		</div>
-		<div id="desktop" class="hidden w-full items-center justify-between md:flex relative">
+		<div
+			id="desktop"
+			class="hidden w-full items-center justify-between md:flex relative px-4 py-2 min-h-0"
+		>
 			<Logo />
 			<div id="links" class="flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
 				<!-- <ThemeDropdown /> -->
