@@ -5,6 +5,7 @@
 	import Embed3D from '$lib/3d-embed.svelte';
 	import Sun from '$lib/Sun.svelte';
 	import Illustration from '$lib/Illustration.svelte';
+	import Illustration2 from '$lib/Illustration2.svelte';
 
 	onMount(() => {
 		// Get the scrollable content element from the layout
@@ -74,11 +75,15 @@
 			<div class="bg-secondary flex size-full justify-center overflow-hidden rounded-xl pt-2">
 				<Illustration />
 			</div>
-			<div class="flex h-full w-full flex-col gap-4 rounded-xl">
-				<div class="bg-primary h-1/2 w-full rounded-xl overflow-hidden">
-					<!-- <Embed3D /> -->
+			<div class="flex h-full w-full flex-col gap-4 rounded-xl overflow-hidden">
+				<div class="h-1/2 flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
+					<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-primary rounded-xl"></div>
+					<Illustration2 />
 				</div>
-				<div class="bg-accent h-1/2 w-full rounded-xl"></div>
+				<div class="h-1/2 flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
+					<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-accent rounded-xl"></div>
+					<Illustration2 />
+				</div>
 			</div>
 		</div>
 	</div>
