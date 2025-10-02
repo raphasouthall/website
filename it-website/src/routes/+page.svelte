@@ -6,6 +6,7 @@
 	import Sun from '$lib/Sun.svelte';
 	import Illustration from '$lib/Illustration.svelte';
 	import Illustration2 from '$lib/Illustration2.svelte';
+	import Illustration3 from '$lib/Illustration3.svelte';
 
 	onMount(() => {
 		// Get the scrollable content element from the layout
@@ -72,17 +73,18 @@
 			id="hero-right"
 			class="hidden h-full flex-1 select-none items-center justify-center gap-4 overflow-hidden rounded-xl p-4 text-center lg:flex min-h-0"
 		>
-			<div class="bg-secondary flex size-full justify-center overflow-hidden rounded-xl pt-2">
-				<Illustration />
+			<div class="size-full flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
+				<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-primary rounded-xl"></div>
+				<Illustration2 />
 			</div>
 			<div class="flex h-full w-full flex-col gap-4 rounded-xl overflow-hidden">
-				<div class="h-1/2 flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
+				<div class="h-2/3 flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
 					<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-primary rounded-xl"></div>
 					<Illustration2 />
 				</div>
-				<div class="h-1/2 flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
+				<div class="flex-1 justify-center rounded-xl overflow-hidden pt-2 relative">
 					<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-accent rounded-xl"></div>
-					<Illustration2 />
+					<Illustration3 />
 				</div>
 			</div>
 		</div>
