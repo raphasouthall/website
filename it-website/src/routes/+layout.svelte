@@ -2,7 +2,7 @@
 	import '../app.css';
 	import { IconMenu3, IconMinus, IconCircleCaretRight } from '@tabler/icons-svelte';
 	import ThemeDropdown from '../lib/ThemeDropdown.svelte';
-	import Logo from '$lib/Logo.svelte';
+	import Logo from '$lib/solidplus.svelte';
 
 	let sidebarOpen = false;
 </script>

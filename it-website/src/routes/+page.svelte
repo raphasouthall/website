@@ -78,11 +78,9 @@
 			</div>
 
 			<div
-				class="col-span-2 row-span-6 col-start-4 row-start-1 rounded-2xl overflow-hidden relative"
+				class="col-span-2 row-span-6 col-start-4 row-start-1 rounded-4xl overflow-hidden relative"
 			>
-				<div
-					class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-secondary rounded-4xl"
-				></div>
+				<div class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-primary rounded-4xl"></div>
 				<Illustration />
 			</div>
 

@@ -1,7 +1,7 @@
-<div class="absolute inset-0 flex items-center justify-center">
+<div class="absolute inset-0 flex items-end justify-center">
 	<svg
 		class="h-full w-auto shrink-0 scale-x-[-1]"
-		viewBox="0 0 200 290"
+		viewBox="0 0 220 290"
 		preserveAspectRatio="xMidYMax meet"
 		version="1.1"
 		id="svg1"
