@@ -156,7 +156,7 @@
 			<div
 				class="col-span-3 row-span-4 row-start-7 col-start-3 rounded-4xl overflow-hidden relative"
 			>
-				<div class="absolute bottom-0 left-0 right-0 h-[95%] w-full bg-accent rounded-4xl"></div>
+				<div class="absolute bottom-0 left-0 right-0 h-[95%] w-full bg-primary rounded-4xl"></div>
 				<Illustration3 />
 			</div>
 
