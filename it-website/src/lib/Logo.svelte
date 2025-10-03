@@ -1,7 +1,8 @@
 <a href="/" class="flex select-none items-center gap-2">
 	<svg
-		class="fill-primary hover:fill-secondary transition-colors duration-300 size-logo"
-		viewBox="0 0 190.02206 190.40298"
+		class="fill-primary hover:fill-secondary transition-colors duration-300 h-fit"
+		viewBox="0 0 190 190"
+		preserveAspectRatio="xMidYMax meet"
 		version="1.1"
 		id="svg1"
 		xmlns="http://www.w3.org/2000/svg"

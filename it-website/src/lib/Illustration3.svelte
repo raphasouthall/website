@@ -1,6 +1,7 @@
-<div class="hover:scale-[1.07] transition-all duration-500 ease-in-out relative">
+<div class="absolute inset-0 flex items-end justify-center">
 	<svg
-		class="h-full w-auto relative z-10"
+		class="h-full w-auto shrink-0"
+		preserveAspectRatio="xMidYMax meet"
 		viewBox="0 0 255 190"
 		version="1.1"
 		id="svg1"

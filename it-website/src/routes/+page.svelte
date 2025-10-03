@@ -4,6 +4,7 @@
 	let contentElement: HTMLElement;
 	import Embed3D from '$lib/3d-embed.svelte';
 	import Sun from '$lib/Sun.svelte';
+	import Logo from '$lib/Logo.svelte';
 	import Illustration from '$lib/Illustration.svelte';
 	import Illustration2 from '$lib/Illustration2.svelte';
 	import Illustration3 from '$lib/Illustration3.svelte';
@@ -35,57 +36,62 @@
 		class="flex h-[84dvh] lg:h-[88dvh] w-full flex-col items-center justify-center gap-2 py-2 text-center lg:flex-row min-h-0 overflow-hidden"
 	>
 		<div
-			id="hero-left"
-			class="flex flex-col w-full gap-6 items-center justify-center text-center font-light
-        lg:h-full lg:w-1/2 lg:px-[2cqw] lg:pt-8 lg:gap-4 min-h-0 overflow-auto"
+			class="grid grid-cols-5 grid-rows-10 gap-4 w-full h-[84dvh] lg:h-[88dvh] min-h-0 overflow-hidden p-4"
 		>
+			<!-- Headline cell -->
 			<div
-				id="headline"
-				class="flex w-full flex-col items-center justify-center lg:items-start lg:justify-start gap-3
-          text-center text-hero-h1 flex-shrink-0"
+				class="col-span-3 row-span-2 col-start-1 rounded-2xl overflow-hidden pl-4 pt-2 @container"
 			>
-				<p class="">Technology.</p>
-				<div class="flex items-center justify-center lg:justify-start w-full">
-					<p class="text-accent font-medium">Reliability</p>
-					<div class="pt-8"><Sun /></div>
-				</div>
-				<p>Growth.</p>
-			</div>
-
-			<div
-				class="flex flex-1 flex-col w-full items-center lg:items-start justify-around px-6 lg:px-0 gap-6 text-hero-h2 min-h-0"
-			>
-				<p class="text-base-content/70 text-hero-h3 lg:text-justify flex-shrink">
-					IT solutions tailored to your needs, with genuine partnership and clear communication
-					while we manage the technical complexity.
-				</p>
-				<div class="flex items-center justify-center gap-6 lg:justify-start flex-shrink-0">
-					<button class="btn-cta">Get Started</button>
-					<div class="flex w-full flex-col p-2 text-start">
-						<p class="">100+</p>
-						<p class="text-hero-h4">Happy Customers</p>
+				<div
+					id="headline"
+					class="text-start text-[15cqmin] md:text-[12cqmin] lg:text-[8cqmin] leading-14 flex flex-col justify-center h-full"
+				>
+					<p class="font-light">Technology</p>
+					<div class="flex items-center gap-1">
+						<p class="text-accent font-medium">made human</p>
+						<div class="pt-6"><Sun /></div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div
-			id="hero-right"
-			class="hidden h-full flex-1 select-none items-center justify-center gap-4 overflow-hidden rounded-xl p-4 text-center lg:flex min-h-0"
-		>
-			<div class="size-full flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
-				<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-primary rounded-xl"></div>
+			<!-- Subheadline cell -->
+			<div
+				class="col-span-3 row-span-1 row-start-3 col-start-1 rounded-2xl overflow-hidden pl-4 @container"
+			>
+				<p class="text-[6.5cqmin] text-start leading-7 tracking-wider font-light">
+					Solutions that are clear, caring and accessible to everyone
+				</p>
+			</div>
+
+			<div
+				class="col-span-2 row-span-6 row-start-4 col-start-1 rounded-2xl overflow-hidden relative"
+			>
+				<div class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-primary rounded-xl"></div>
 				<Illustration2 />
 			</div>
-			<div class="flex h-full w-full flex-col gap-4 rounded-xl overflow-hidden">
-				<div class="h-2/3 flex justify-center w-full rounded-xl overflow-hidden pt-2 relative">
-					<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-primary rounded-xl"></div>
-					<Illustration2 />
-				</div>
-				<div class="flex-1 justify-center rounded-xl overflow-hidden pt-2 relative">
-					<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-accent rounded-xl"></div>
-					<Illustration3 />
-				</div>
+
+			<!-- Button cell -->
+			<div
+				class="col-span-2 row-span-1 row-start-10 col-start-1 rounded-2xl overflow-hidden @container"
+			>
+				<button class="btn btn-accent rounded-full size-full text-[8cqmin]">Get in touch</button>
+			</div>
+
+			<div
+				class="col-span-2 row-span-6 col-start-4 row-start-1 rounded-2xl overflow-hidden relative"
+			>
+				<div class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-secondary rounded-xl"></div>
+				<Illustration />
+			</div>
+
+			<div class="col-span-3 row-span-4 row-start-7 rounded-2xl overflow-hidden relative">
+				<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-accent rounded-xl"></div>
+				<Illustration3 />
+			</div>
+
+			<!-- Small button cell -->
+			<div class="col-span-1 row-span-2 row-start-5 rounded-2xl overflow-hidden @container">
+				<Logo />
 			</div>
 		</div>
 	</div>
