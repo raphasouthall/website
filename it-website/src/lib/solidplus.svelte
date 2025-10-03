@@ -1,4 +1,4 @@
-<a href="/" aria-label="logo" class="flex select-none items-center justify-center gap-2 w-15">
+<a href="/" aria-label="logo" class="">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 904.1 215.39" class="fill-base-content">
 		<g id="Camada_1-2" data-name="Camada 1">
 			<path

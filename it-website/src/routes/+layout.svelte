@@ -13,11 +13,9 @@
 		id="nav"
 		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex h-[8dvh] lg:h-[6dvh] overflow-hidden items-center rounded-xl backdrop-blur-[2px] md:justify-start md:gap-2"
 	>
-		<div
-			id="mobile"
-			class="flex size-full items-center justify-between gap-2 md:hidden p-4 min-h-0"
-		>
-			<Logo />
+		<div id="mobile" class="flex size-full items-center justify-between gap-2 md:hidden p-4">
+			<div id="logo" class="w-12"><Logo /></div>
+
 			<!-- <ThemeDropdown /> -->
 			<button class="btn-responsive-ghost" on:click={() => (sidebarOpen = !sidebarOpen)}>
 				{#if sidebarOpen}
@@ -29,9 +27,9 @@
 		</div>
 		<div
 			id="desktop"
-			class="hidden w-full items-center justify-between md:flex relative px-4 py-2 min-h-0"
+			class="hidden h-full w-full items-center justify-between md:flex relative px-4 py-2"
 		>
-			<Logo />
+			<div id="logo" class="w-15"><Logo /></div>
 			<div id="links" class="flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
 				<!-- <ThemeDropdown /> -->
 				<button class="btn-responsive-ghost">ABOUT</button>
