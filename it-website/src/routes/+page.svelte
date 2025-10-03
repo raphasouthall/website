@@ -36,7 +36,7 @@
 		class="flex h-[84dvh] lg:h-[88dvh] w-full flex-col items-center justify-center gap-2 py-2 text-center lg:flex-row min-h-0 overflow-hidden"
 	>
 		<div
-			class="grid grid-cols-5 grid-rows-10 gap-4 w-full h-[84dvh] lg:h-[88dvh] min-h-0 overflow-hidden p-4"
+			class="grid grid-cols-5 grid-rows-10 gap-2 w-full h-[84dvh] lg:h-[88dvh] min-h-0 overflow-hidden p-4"
 		>
 			<!-- Headline cell -->
 			<div
@@ -56,23 +56,23 @@
 
 			<!-- Subheadline cell -->
 			<div
-				class="col-span-3 row-span-1 row-start-3 col-start-1 rounded-2xl overflow-hidden pl-4 @container"
+				class="col-span-3 row-span-1 row-start-3 col-start-1 rounded-4xl overflow-hidden pl-4 @container"
 			>
-				<p class="text-[6.5cqmin] text-start leading-7 tracking-wider font-light">
+				<p class="text-[6.5cqmin] text-start leading-7 tracking-wider">
 					Solutions that are clear, caring and accessible to everyone
 				</p>
 			</div>
 
 			<div
-				class="col-span-2 row-span-6 row-start-4 col-start-1 rounded-2xl overflow-hidden relative"
+				class="col-span-2 row-span-6 row-start-4 col-start-1 rounded-4xl overflow-hidden relative"
 			>
-				<div class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-primary rounded-xl"></div>
+				<div class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-primary rounded-4xl"></div>
 				<Illustration2 />
 			</div>
 
 			<!-- Button cell -->
 			<div
-				class="col-span-2 row-span-1 row-start-10 col-start-1 rounded-2xl overflow-hidden @container"
+				class="col-span-2 row-span-1 row-start-10 col-start-1 rounded-4xl overflow-hidden @container"
 			>
 				<button class="btn btn-accent rounded-full size-full text-[8cqmin]">Get in touch</button>
 			</div>
@@ -80,17 +80,21 @@
 			<div
 				class="col-span-2 row-span-6 col-start-4 row-start-1 rounded-2xl overflow-hidden relative"
 			>
-				<div class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-secondary rounded-xl"></div>
+				<div
+					class="absolute bottom-0 left-0 right-0 h-[100%] w-full bg-secondary rounded-4xl"
+				></div>
 				<Illustration />
 			</div>
 
-			<div class="col-span-3 row-span-4 row-start-7 rounded-2xl overflow-hidden relative">
-				<div class="absolute bottom-0 left-0 right-0 h-[90%] w-full bg-accent rounded-xl"></div>
+			<div class="col-span-3 row-span-4 row-start-7 rounded-4xl overflow-hidden relative">
+				<div class="absolute bottom-0 left-0 right-0 h-[95%] w-full bg-accent rounded-4xl"></div>
 				<Illustration3 />
 			</div>
 
 			<!-- Small button cell -->
-			<div class="col-span-1 row-span-2 row-start-5 rounded-2xl overflow-hidden @container">
+			<div
+				class="col-span-1 row-span-3 row-start-4 rounded-4xl bg-base-300 overflow-hidden @container p-4"
+			>
 				<Logo />
 			</div>
 		</div>

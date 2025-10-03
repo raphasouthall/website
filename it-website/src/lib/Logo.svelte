@@ -1,4 +1,4 @@
-<a href="/" class="flex select-none items-center gap-2">
+<a href="/" class="flex select-none items-center justify-center gap-2 h-full">
 	<svg
 		class="fill-primary hover:fill-secondary transition-colors duration-300 h-fit"
 		viewBox="0 0 190 190"
