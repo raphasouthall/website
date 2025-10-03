@@ -141,9 +141,7 @@
 			<div
 				class="col-span-2 row-span-1 row-start-10 col-start-1 rounded-4xl overflow-hidden @container"
 			>
-				<button class="btn btn-accent rounded-full size-full text-[clamp(1rem,2vw+0.5rem,3.5rem)]"
-					>Get in touch</button
-				>
+				<button class="btn btn-accent rounded-full size-full text-xl">Get in touch</button>
 			</div>
 
 			<!-- <div
