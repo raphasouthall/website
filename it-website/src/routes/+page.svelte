@@ -25,16 +25,20 @@
 	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
 		formState = 'submitting';
-		// Formspree integration — replace YOUR_FORM_ID with actual ID
 		try {
-			const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+			const res = await fetch('https://formsubmit.co/ajax/hello@solidplus.tech', {
 				method: 'POST',
-				headers: { Accept: 'application/json' },
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
+				},
 				body: JSON.stringify({
 					name: formName,
 					email: formEmail,
 					company: formCompany,
-					message: formMessage
+					message: formMessage,
+					_subject: `New enquiry from ${formName} at ${formCompany}`,
+					_template: 'table'
 				})
 			});
 			if (res.ok) {

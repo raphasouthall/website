@@ -8,7 +8,6 @@
 	import {
 		IconMenu2,
 		IconX,
-		IconBrandLinkedin,
 		IconBrandGithub,
 		IconMail
 	} from '@tabler/icons-svelte';
@@ -200,14 +199,6 @@
 							class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors inline-flex items-center gap-2"
 						>
 							<IconMail size={16} /> hello@solidplus.tech
-						</a>
-						<a
-							href="https://linkedin.com/company/solidplus"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors inline-flex items-center gap-2"
-						>
-							<IconBrandLinkedin size={16} /> LinkedIn
 						</a>
 						<a
 							href="https://github.com/raphasouthall"
