@@ -196,10 +196,10 @@
 					<h4 class="font-heading font-bold text-sm tracking-wider uppercase mb-4">Connect</h4>
 					<div class="flex flex-col gap-2">
 						<a
-							href="mailto:hello@solidplus.tech"
+							href="mailto:admin@solidplus.tech"
 							class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors inline-flex items-center gap-2"
 						>
-							<IconMail size={16} /> hello@solidplus.tech
+							<IconMail size={16} /> admin@solidplus.tech
 						</a>
 						<a
 							href="https://www.linkedin.com/in/raphael-southall-021214197/"

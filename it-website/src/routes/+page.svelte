@@ -26,7 +26,7 @@
 		e.preventDefault();
 		formState = 'submitting';
 		try {
-			const res = await fetch('https://formsubmit.co/ajax/hello@solidplus.tech', {
+			const res = await fetch('https://formsubmit.co/ajax/admin@solidplus.tech', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -408,8 +408,8 @@
 					<p>No jargon. No pressure. Just a warm, honest conversation about where you are and where you want to go.</p>
 					<p>
 						Prefer email?
-						<a href="mailto:hello@solidplus.tech" class="text-accent hover:underline">
-							hello@solidplus.tech
+						<a href="mailto:admin@solidplus.tech" class="text-accent hover:underline">
+							admin@solidplus.tech
 						</a>
 					</p>
 				</div>
@@ -501,7 +501,7 @@
 
 						{#if formState === 'error'}
 							<div class="text-error text-sm text-center">
-								Something went wrong. Please email us directly at hello@solidplus.tech
+								Something went wrong. Please email us directly at admin@solidplus.tech
 							</div>
 						{/if}
 
