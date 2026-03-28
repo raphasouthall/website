@@ -1,51 +1,49 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
-@plugin "daisyui" {
-	/* themes: all; */
-}
+@plugin "daisyui" {}
 
+/* ── Light Theme (Enterprise Palette from Brand Guidelines) ──── */
 @plugin "daisyui/theme" {
 	name: 'light';
 	default: true;
 	prefersdark: false;
 	color-scheme: 'light';
-	/* Base colors using your light cream foundation */
-	--color-base-100: oklch(98.1% 0.004 107); /* Your #f9f9f6 */
-	--color-base-200: oklch(96% 0.006 107); /* Slightly darker */
-	--color-base-300: oklch(93% 0.008 107); /* Even darker for subtle contrast */
-	--color-base-content: oklch(25% 0.02 267); /* Dark blue-gray for text */
 
-	/* Primary: Complementary blue-purple to balance the warm coral/yellow */
-	--color-primary: oklch(55% 0.15 267);
-	--color-primary-content: oklch(98% 0.005 267);
+	/* Cream base from brand moodboard */
+	--color-base-100: oklch(97% 0.01 90);
+	--color-base-200: oklch(95% 0.012 90);
+	--color-base-300: oklch(91% 0.015 90);
+	--color-base-content: oklch(25% 0.04 250);
 
-	/* Secondary: Your coral red */
-	--color-secondary: oklch(71% 0.185 33.9); /* Your #ff6d4d */
-	--color-secondary-content: oklch(98% 0.01 30);
+	/* Primary: #FBA035 — brand amber/golden */
+	--color-primary: oklch(78% 0.16 70);
+	--color-primary-content: oklch(20% 0.04 70);
 
-	/* Accent: Your golden yellow */
-	--color-accent: oklch(81.8% 0.17 77.9); /* Your #ffb300 */
-	--color-accent-content: oklch(25% 0.05 80);
+	/* Secondary: #2E3A59 — brand dark navy */
+	--color-secondary: oklch(32% 0.05 260);
+	--color-secondary-content: oklch(97% 0.005 260);
 
-	/* Neutral using your dark base color family */
-	--color-neutral: oklch(30% 0.05 267);
-	--color-neutral-content: oklch(95% 0.01 267);
+	/* Accent: #4A6BC8 — brand blue */
+	--color-accent: oklch(52% 0.15 260);
+	--color-accent-content: oklch(97% 0.005 260);
 
-	/* System colors */
-	--color-info: oklch(70% 0.15 240);
-	--color-info-content: oklch(25% 0.05 240);
-	--color-success: oklch(75% 0.15 150);
-	--color-success-content: oklch(25% 0.05 150);
-	--color-warning: oklch(80% 0.16 85); /* Harmonizes with your accent */
-	--color-warning-content: oklch(25% 0.05 85);
-	--color-error: oklch(68% 0.18 20); /* Harmonizes with your secondary */
-	--color-error-content: oklch(95% 0.01 20);
+	/* Neutral: dark navy for dark sections */
+	--color-neutral: oklch(28% 0.05 260);
+	--color-neutral-content: oklch(95% 0.01 90);
 
-	/* Design tokens */
+	--color-info: oklch(62% 0.14 230);
+	--color-info-content: oklch(98% 0.005 230);
+	--color-success: oklch(62% 0.15 145);
+	--color-success-content: oklch(98% 0.005 145);
+	--color-warning: oklch(78% 0.16 70);
+	--color-warning-content: oklch(20% 0.04 70);
+	--color-error: oklch(58% 0.20 25);
+	--color-error-content: oklch(98% 0.005 25);
+
 	--radius-selector: 0.5rem;
-	--radius-field: 0.25rem;
-	--radius-box: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 0.75rem;
 	--size-selector: 0.25rem;
 	--size-field: 0.25rem;
 	--border: 1px;
@@ -53,47 +51,42 @@
 	--noise: 0;
 }
 
+/* ── Dark Theme ──────────────────────────────────────────────── */
 @plugin "daisyui/theme" {
 	name: 'dark';
 	default: false;
 	prefersdark: true;
 	color-scheme: 'dark';
-	/* Base colors using your dark blue-gray foundation */
-	--color-base-100: oklch(35.3% 0.057 267.3); /* Your #2e3a59 */
-	--color-base-200: oklch(32% 0.05 267); /* Darker variation */
-	--color-base-300: oklch(28% 0.04 267); /* Even darker */
-	--color-base-content: oklch(95% 0.01 107); /* Light cream for text */
 
-	/* Primary: Brighter, more vibrant version for dark theme */
-	--color-primary: oklch(65% 0.2 267);
-	--color-primary-content: oklch(95% 0.01 267);
+	--color-base-100: oklch(27% 0.04 260);
+	--color-base-200: oklch(24% 0.035 260);
+	--color-base-300: oklch(20% 0.03 260);
+	--color-base-content: oklch(93% 0.01 90);
 
-	/* Secondary: Adjusted coral for dark backgrounds */
-	--color-secondary: oklch(75% 0.19 33.9); /* Slightly brighter than light theme */
-	--color-secondary-content: oklch(25% 0.02 33);
+	--color-primary: oklch(80% 0.16 70);
+	--color-primary-content: oklch(20% 0.04 70);
 
-	/* Accent: Adjusted golden yellow for dark backgrounds */
-	--color-accent: oklch(85% 0.18 77.9); /* Slightly brighter for contrast */
-	--color-accent-content: oklch(25% 0.03 77);
+	--color-secondary: oklch(85% 0.01 260);
+	--color-secondary-content: oklch(25% 0.04 260);
 
-	/* Neutral */
-	--color-neutral: oklch(20% 0.03 267);
-	--color-neutral-content: oklch(90% 0.01 267);
+	--color-accent: oklch(58% 0.14 260);
+	--color-accent-content: oklch(98% 0.005 260);
 
-	/* System colors optimized for dark theme */
-	--color-info: oklch(75% 0.18 240);
-	--color-info-content: oklch(20% 0.03 240);
-	--color-success: oklch(80% 0.18 150);
-	--color-success-content: oklch(20% 0.03 150);
-	--color-warning: oklch(85% 0.19 85); /* Brighter warning for visibility */
-	--color-warning-content: oklch(20% 0.03 85);
-	--color-error: oklch(72% 0.2 20); /* Brighter error for visibility */
-	--color-error-content: oklch(90% 0.01 20);
+	--color-neutral: oklch(20% 0.03 260);
+	--color-neutral-content: oklch(90% 0.01 90);
 
-	/* Design tokens */
+	--color-info: oklch(65% 0.14 230);
+	--color-info-content: oklch(98% 0.005 230);
+	--color-success: oklch(65% 0.15 145);
+	--color-success-content: oklch(98% 0.005 145);
+	--color-warning: oklch(80% 0.16 70);
+	--color-warning-content: oklch(20% 0.04 70);
+	--color-error: oklch(62% 0.18 25);
+	--color-error-content: oklch(98% 0.005 25);
+
 	--radius-selector: 0.5rem;
-	--radius-field: 0.25rem;
-	--radius-box: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 0.75rem;
 	--size-selector: 0.25rem;
 	--size-field: 0.25rem;
 	--border: 1px;
@@ -103,78 +96,79 @@
 
 @theme {
 	--breakpoint-3xl: 120rem;
-	--breakpoint-4xl: 130rem;
 }
 
+/* ── Base Typography (Brand: Nunito Sans + Roboto Slab) ──────── */
 @layer base {
 	body {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Nunito Sans', 'Nunito', system-ui, sans-serif;
 	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: 'Nunito', sans-serif;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Nunito Sans', 'Nunito', system-ui, sans-serif;
 	}
 }
 
-/* Define custom font utilities */
 @layer utilities {
 	.font-heading {
-		font-family: 'Nunito', sans-serif;
+		font-family: 'Nunito Sans', 'Nunito', system-ui, sans-serif;
 	}
-
 	.font-body {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Nunito Sans', 'Nunito', system-ui, sans-serif;
+	}
+	.font-display {
+		font-family: 'Roboto Slab', serif;
+	}
+	.font-mono {
+		font-family: 'JetBrains Mono', monospace;
 	}
 }
 
-.nunito-bold {
-	font-family: 'Nunito', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 900;
-	font-style: normal;
+/* ── Scroll Reveal Animations ────────────────────────────────── */
+.reveal-hidden {
+	opacity: 0;
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal-hidden[data-reveal-direction="up"] { transform: translateY(20px); }
+.reveal-hidden[data-reveal-direction="left"] { transform: translateX(-20px); }
+.reveal-hidden[data-reveal-direction="right"] { transform: translateX(20px); }
+.reveal-hidden[data-reveal-direction="none"] { transform: none; }
+
+.reveal-visible {
+	opacity: 1;
+	transform: none;
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	transition-delay: var(--reveal-delay, 0ms);
 }
 
-.size-logo {
-	@apply size-[3cqh];
+@media (prefers-reduced-motion: reduce) {
+	.reveal-hidden, .reveal-visible {
+		transition: none;
+		transform: none;
+		opacity: 1;
+	}
 }
 
-.size-logo-text {
-	@apply text-lg md:text-xl 2xl:text-4xl;
+/* ── Hero Entrance ───────────────────────────────────────────── */
+@keyframes hero-enter {
+	from { opacity: 0; transform: translateY(16px); }
+	to { opacity: 1; transform: translateY(0); }
 }
 
-.btn-responsive-ghost {
-	@apply btn rounded-xl btn-ghost hover:btn-secondary border-0 text-[1.5cqh] p-[1.5cqw];
+.hero-animate {
+	animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.hero-animate-delay-1 {
+	animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+.hero-animate-delay-2 {
+	animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+.hero-animate-delay-3 {
+	animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
 }
 
-.btn-responsive-accent {
-	@apply btn rounded-xl btn-accent border-0 text-[1.5cqh];
-}
-
-.btn-responsive-primary {
-	@apply btn rounded-xl btn-primary border-0 text-[1.8cqh];
-}
-
-.btn-cta {
-	@apply btn rounded-2xl btn-accent border-0 lg:text-[1.8cqw] lg:p-[2cqw];
-}
-
-.text-hero-h1 {
-	@apply text-5xl md:text-[5.5cqw] select-none;
-}
-
-.text-hero-h2 {
-	@apply text-2xl md:text-[2cqw];
-}
-
-.text-hero-h3 {
-	@apply text-lg md:text-[length:min(2cqw,3cqh)];
-}
-
-.text-hero-h4 {
-	@apply text-lg md:text-xl lg:text-3xl xl:text-[1.5rem] 2xl:text-[2rem] 3xl:text-[2.75rem] 4xl:text-[3.5rem];
+/* ── Smooth Scroll ───────────────────────────────────────────── */
+html {
+	scroll-behavior: smooth;
 }

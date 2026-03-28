@@ -4,17 +4,130 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+		<meta name="language" content="en-GB" />
+		<meta name="author" content="SolidPlus Ltd" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="SolidPlus Ltd" />
+		<meta property="og:title" content="Enterprise AI Consulting UK | SolidPlus Ltd" />
+		<meta property="og:description" content="AI strategy, implementation, and governance for UK enterprises. Measurable outcomes from experienced practitioners." />
+		<meta property="og:locale" content="en_GB" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Enterprise AI Consulting UK | SolidPlus Ltd" />
+		<meta name="twitter:description" content="AI strategy, implementation, and governance for UK enterprises." />
+
 		%sveltekit.head%
+
+		<!-- Fonts: Nunito Sans (enterprise) + Roboto Slab (display) per brand guidelines -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
+
+		<!-- Schema.org -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ProfessionalService",
+			"name": "SolidPlus Ltd",
+			"description": "Enterprise AI consulting firm specialising in AI strategy, implementation, and governance for UK businesses.",
+			"url": "https://solidplus.tech",
+			"foundingDate": "2024",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "GB"
+			},
+			"areaServed": {
+				"@type": "Country",
+				"name": "United Kingdom"
+			},
+			"knowsAbout": [
+				"Artificial Intelligence",
+				"Machine Learning",
+				"Large Language Models",
+				"Microsoft Azure",
+				"AI Strategy",
+				"AI Governance"
+			],
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "AI Consulting Services",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "AI Strategy & Roadmapping",
+							"description": "Define your enterprise AI strategy with a prioritised roadmap aligned to business outcomes."
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "AI Infrastructure & Architecture",
+							"description": "Production-grade Azure AI infrastructure design and implementation."
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Enterprise AI Integration",
+							"description": "Connect AI capabilities into the tools and systems your teams already use."
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Knowledge & Memory Systems",
+							"description": "RAG pipelines, semantic search, and structured knowledge architectures."
+						}
+					}
+				]
+			}
+		}
+		</script>
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "What does enterprise AI consulting involve?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Enterprise AI consulting covers the full lifecycle: assessing your organisation's readiness, defining an AI strategy aligned to business goals, selecting and implementing the right technologies, and establishing governance frameworks. SolidPlus works with UK enterprises from strategy through to production deployment."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How long does a typical AI engagement take?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A focused AI strategy engagement runs 4-8 weeks. Implementation sprints deliver working systems in 8-12 weeks. We design every engagement with speed-to-value in mind."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Do you work with regulated industries?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes. SolidPlus has experience with financial services, professional services, and logistics clients where regulatory compliance and data governance are core considerations."
+					}
+				}
+			]
+		}
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>

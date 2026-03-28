@@ -1,79 +1,232 @@
 <script lang="ts">
 	import '../app.css';
-	import { IconMenu3, IconMinus, IconCircleCaretRight } from '@tabler/icons-svelte';
-	import ThemeDropdown from '../lib/ThemeDropdown.svelte';
-	import Logo from '$lib/solidplus.svelte';
+	import '@fontsource-variable/inter';
+	import '@fontsource/jetbrains-mono/400.css';
+	import { onMount } from 'svelte';
+	import { navItems } from '$lib/data/navItems';
+	import Logo from '$lib/Logo.svelte';
+	import {
+		IconMenu2,
+		IconX,
+		IconBrandLinkedin,
+		IconBrandGithub,
+		IconMail
+	} from '@tabler/icons-svelte';
+	import type { Snippet } from 'svelte';
 
-	let sidebarOpen = false;
+	let { children }: { children: Snippet } = $props();
+	let sidebarOpen = $state(false);
+	let activeSection = $state('hero');
+	let scrolled = $state(false);
+
+	onMount(() => {
+		// Active section tracking
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const visible = entries
+					.filter((e) => e.isIntersecting)
+					.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+				if (visible.length > 0) {
+					activeSection = visible[0].target.id;
+				}
+			},
+			{ rootMargin: '-80px 0px -40% 0px', threshold: [0, 0.1, 0.25] }
+		);
+
+		const sections = ['hero', ...navItems.map((n) => n.id)];
+		sections.forEach((id) => {
+			const el = document.getElementById(id);
+			if (el) observer.observe(el);
+		});
+
+		// Scroll detection for nav background
+		const handleScroll = () => {
+			scrolled = window.scrollY > 20;
+		};
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		return () => {
+			observer.disconnect();
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
+
+	function closeSidebar() {
+		sidebarOpen = false;
+	}
 </script>
 
-<div class="font-body text-base-content bg-base-300 relative h-dvh">
-	<!-- Fixed Nav -->
-	<div
-		id="nav"
-		class="bg-base-100/70 fixed left-3 right-3 top-3 z-50 flex h-[8dvh] lg:h-[6dvh] overflow-hidden items-center rounded-xl backdrop-blur-[2px] md:justify-start md:gap-2"
-	>
-		<div id="mobile" class="flex size-full items-center justify-between gap-2 md:hidden p-4">
-			<div id="logo" class="w-12"><Logo /></div>
+<svelte:head>
+	<title>Enterprise AI Consulting UK | SolidPlus Ltd</title>
+	<meta
+		name="description"
+		content="SolidPlus delivers enterprise AI strategy, implementation, and governance for UK businesses. Measurable outcomes, no hype. Book a discovery call."
+	/>
+	<link rel="canonical" href="https://solidplus.tech/" />
+</svelte:head>
 
-			<!-- <ThemeDropdown /> -->
-			<button class="btn-responsive-ghost" on:click={() => (sidebarOpen = !sidebarOpen)}>
+<div class="font-body text-base-content bg-base-100 min-h-dvh">
+	<!-- ── Nav ──────────────────────────────────────────── -->
+	<nav
+		aria-label="Primary navigation"
+		class="fixed top-0 left-0 right-0 z-50 transition-all duration-300
+		       {scrolled
+			? 'bg-base-100/90 backdrop-blur-md shadow-sm'
+			: 'bg-transparent'}"
+	>
+		<div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-18">
+			<!-- Logo -->
+			<div class="w-12 md:w-14">
+				<Logo />
+			</div>
+
+			<!-- Desktop Links -->
+			<div class="hidden md:flex items-center gap-1">
+				{#each navItems as item}
+					<a
+						href="#{item.id}"
+						class="px-3 py-2 text-sm font-medium tracking-wide rounded-lg transition-colors duration-150
+						       {activeSection === item.id
+							? 'text-primary bg-primary/8'
+							: 'text-base-content/70 hover:text-base-content hover:bg-base-200'}"
+					>
+						{item.label}
+					</a>
+				{/each}
+			</div>
+
+			<!-- Desktop CTA -->
+			<a
+				href="#contact"
+				class="hidden md:inline-flex btn btn-primary btn-sm rounded-lg text-sm font-semibold px-5"
+			>
+				Book a Call
+			</a>
+
+			<!-- Mobile toggle -->
+			<button
+				class="md:hidden btn btn-ghost btn-sm btn-square"
+				onclick={() => (sidebarOpen = !sidebarOpen)}
+				aria-expanded={sidebarOpen}
+				aria-label="Toggle menu"
+			>
 				{#if sidebarOpen}
-					<IconMinus size="20" />
+					<IconX size={20} />
 				{:else}
-					<IconMenu3 size="20" />
+					<IconMenu2 size={20} />
 				{/if}
 			</button>
 		</div>
-		<div
-			id="desktop"
-			class="hidden h-full w-full items-center justify-between md:flex relative px-4 py-2"
-		>
-			<div id="logo" class="w-15"><Logo /></div>
-			<div id="links" class="flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
-				<!-- <ThemeDropdown /> -->
-				<button class="btn-responsive-ghost">ABOUT</button>
-				<button class="btn-responsive-ghost">SOLUTIONS</button>
-				<button class="btn-responsive-ghost">CASE STUDIES</button>
-				<button class="btn-responsive-ghost">INSIGHTS</button>
-			</div>
-			<button id="CTA" class="btn-responsive-accent">CONTACT US</button>
-		</div>
-	</div>
 
-	<div id="app" class="relative flex h-full min-h-0 overflow-hidden">
-		<!-- Invisible backdrop -->
+		<!-- Mobile Menu -->
 		{#if sidebarOpen}
-			<div
-				class="absolute inset-0 z-10 md:hidden"
-				on:click={() => (sidebarOpen = false)}
-				on:keydown={(e) => e.key === 'Escape' && sidebarOpen == false}
-				role="button"
-				tabindex="0"
-				aria-label="Close sidebar"
-			></div>
-		{/if}
+			<!-- Backdrop -->
+			<button
+				class="fixed inset-0 bg-black/20 md:hidden z-40"
+				onclick={closeSidebar}
+				aria-label="Close menu"
+				tabindex="-1"
+			></button>
 
-		<!-- Sidebar -->
-		<div
-			id="sidebar"
-			class="bg-base-100/70 fixed bottom-2 left-4 top-24 z-20 rounded-2xl p-2 backdrop-blur-[2px] transition-all duration-150 {sidebarOpen
-				? 'w-1/2 opacity-100 md:w-1/5'
-				: 'w-0 opacity-0'}"
-		>
-			<div id="sidebar-inner" class="flex h-full flex-col gap-2 overflow-y-auto p-2">
-				<button class="btn btn-secondary btn-ghost flex items-center justify-between border-0">
-					<p>ABOUT</p>
-					<IconCircleCaretRight />
-				</button>
-				<button class="btn btn-secondary btn-ghost border-0">SOLUTIONS</button>
-				<button class="btn btn-secondary btn-ghost border-0">CASE STUDIES</button>
-				<button class="btn btn-secondary btn-ghost border-0">INSIGHTS</button>
+			<!-- Drawer -->
+			<div
+				class="fixed top-16 right-4 left-4 z-50 md:hidden bg-base-100 rounded-xl shadow-xl border border-base-300 p-4"
+			>
+				<div class="flex flex-col gap-1">
+					{#each navItems as item}
+						<a
+							href="#{item.id}"
+							class="px-4 py-3 text-base font-medium rounded-lg transition-colors
+							       {activeSection === item.id
+								? 'text-primary bg-primary/8'
+								: 'text-base-content/70 hover:bg-base-200'}"
+							onclick={closeSidebar}
+						>
+							{item.label}
+						</a>
+					{/each}
+					<a
+						href="#contact"
+						class="btn btn-primary rounded-lg mt-2 text-base"
+						onclick={closeSidebar}
+					>
+						Book a Call
+					</a>
+				</div>
+			</div>
+		{/if}
+	</nav>
+
+	<!-- ── Main Content ────────────────────────────────── -->
+	<main id="main">
+		{@render children()}
+	</main>
+
+	<!-- ── Footer ──────────────────────────────────────── -->
+	<footer class="bg-neutral text-neutral-content">
+		<div class="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+				<!-- Brand -->
+				<div>
+					<div class="w-14 mb-4 invert opacity-90">
+						<Logo />
+					</div>
+					<p class="text-sm text-neutral-content/60 leading-relaxed max-w-xs">
+						Enterprise AI consultancy.<br />Clear thinking, solid foundations.
+					</p>
+				</div>
+
+				<!-- Links -->
+				<div>
+					<h4 class="font-heading font-bold text-sm tracking-wider uppercase mb-4">Navigate</h4>
+					<div class="flex flex-col gap-2">
+						{#each navItems as item}
+							<a
+								href="#{item.id}"
+								class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors"
+							>
+								{item.label}
+							</a>
+						{/each}
+					</div>
+				</div>
+
+				<!-- Contact -->
+				<div>
+					<h4 class="font-heading font-bold text-sm tracking-wider uppercase mb-4">Connect</h4>
+					<div class="flex flex-col gap-2">
+						<a
+							href="mailto:hello@solidplus.tech"
+							class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors inline-flex items-center gap-2"
+						>
+							<IconMail size={16} /> hello@solidplus.tech
+						</a>
+						<a
+							href="https://linkedin.com/company/solidplus"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors inline-flex items-center gap-2"
+						>
+							<IconBrandLinkedin size={16} /> LinkedIn
+						</a>
+						<a
+							href="https://github.com/raphasouthall"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-sm text-neutral-content/60 hover:text-neutral-content transition-colors inline-flex items-center gap-2"
+						>
+							<IconBrandGithub size={16} /> GitHub
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="border-t border-neutral-content/10 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4">
+				<p class="text-xs text-neutral-content/40">
+					&copy; {new Date().getFullYear()} SolidPlus Ltd. Registered in England and Wales.
+				</p>
+				<p class="text-xs text-neutral-content/40 italic">Technology made human.</p>
 			</div>
 		</div>
-
-		<div id="content" class="mx-1 my-1 min-h-0 flex-1 overflow-auto rounded-2xl">
-			<slot />
-		</div>
-	</div>
+	</footer>
 </div>
