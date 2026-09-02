@@ -5,7 +5,7 @@ export const processSteps: ProcessStep[] = [
 		number: '01',
 		title: 'Discovery call',
 		description:
-			'A free 30-minute call where you describe the problem and I ask questions. I will tell you on the call whether this is work I should take on.'
+			'You describe the problem on a free 30-minute call and I ask questions. I will tell you on the call whether this is work I should take on.'
 	},
 	{
 		number: '02',

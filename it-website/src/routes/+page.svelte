@@ -88,7 +88,7 @@
 
 				<p class="hero-animate-delay-2 text-lg text-ink-muted leading-[1.69] max-w-lg mb-10">
 					I am Raphael Southall. I build and run Azure landing zones, AKS clusters and the
-					automation around them for companies that cannot afford a bad change window.
+					automation around them for companies whose customers notice when a change goes wrong.
 				</p>
 
 				<div class="hero-animate-delay-3 flex flex-wrap gap-4">
@@ -104,7 +104,7 @@
 				</div>
 
 				<p class="hero-animate-delay-3 mt-5 text-[13px] text-ink-muted">
-					Free 30-minute call. I will tell you straight if I am the wrong person for the job.
+					Free 30-minute call. If the work needs someone else, I will say so on the call.
 				</p>
 			</div>
 
@@ -334,9 +334,9 @@
 				<div class="collapse-title font-semibold">What kind of work do you take on?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						Azure platform work: landing zones, networking, AKS, Terraform, pipelines, certificate
-						and secret automation, cost reviews and security hardening. I do not do application
-						development or generic IT support.
+						I take on Azure platform work, which covers landing zones, networking, AKS, Terraform,
+						pipelines, certificate and secret automation, cost reviews and security hardening.
+						Application development and desktop support sit outside what I offer.
 					</p>
 				</div>
 			</div>
