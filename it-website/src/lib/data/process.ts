@@ -11,7 +11,7 @@ export const processSteps: ProcessStep[] = [
 		number: '02',
 		title: 'Written scope',
 		description:
-			'Within 2 working days you get a one-page scope with deliverables, what I need access to, a price and a start date. You accept it or we change it before any work begins.'
+			'Within 3 working days you get a one-page scope with deliverables, what I need access to, a price and a start date. You accept it or we change it before any work begins.'
 	},
 	{
 		number: '03',

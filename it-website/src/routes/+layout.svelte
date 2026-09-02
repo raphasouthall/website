@@ -172,7 +172,7 @@
 						<Logo />
 					</div>
 					<p class="text-sm text-neutral-content/60 leading-relaxed max-w-xs">
-						Freelance Azure platform engineering.<br />Raphael Southall, trading as SolidPlus Ltd.
+						Freelance Azure platform engineering.<br />Raphael Southall, director of SolidPlus Ltd.
 					</p>
 				</div>
 

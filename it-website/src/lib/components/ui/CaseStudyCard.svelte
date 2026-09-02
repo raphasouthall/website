@@ -13,10 +13,10 @@
 <div class="card bg-white dark:bg-base-200 border border-base-300 h-full">
 	<div class="card-body p-6 md:p-8 gap-5">
 		<div class="flex items-start justify-between gap-4">
-			<span class="badge badge-primary badge-sm font-mono uppercase tracking-wider">{label}</span>
-			<div class="text-right shrink-0">
+			<span class="badge badge-primary badge-sm font-mono uppercase tracking-wider whitespace-nowrap">{label}</span>
+			<div class="text-right min-w-0">
 				<div class="text-2xl md:text-3xl font-extrabold text-secondary">{metric}</div>
-				<div class="text-xs text-base-content/50">{metricLabel}</div>
+				<div class="text-xs text-base-content/50 max-w-[10rem] ml-auto">{metricLabel}</div>
 			</div>
 		</div>
 

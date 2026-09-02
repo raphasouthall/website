@@ -2,14 +2,14 @@ import type { Differentiator } from '$lib/types';
 
 export const differentiators: Differentiator[] = [
 	{
-		title: 'You work with me, not a bench',
+		title: 'One person, start to finish',
 		description:
-			'I scope the work, I do the work and I answer the phone when something breaks. There is no handover between a salesperson and a delivery team because there is only one person.'
+			'I scope the work and I do the work. There is no handover between a salesperson and a delivery team because there is nobody else involved.'
 	},
 	{
-		title: 'I run production, not slide decks',
+		title: 'I run production every day',
 		description:
-			'My day job is operating Azure and AKS estates for a shipping group with real customers on them. The patterns I bring to your environment are the ones that survived 3am pages.'
+			'My day job is operating Azure and AKS estates for a European shipping and logistics group. Freelance work happens in evenings and weekends by arrangement, and the patterns I bring are the ones that survive real change windows.'
 	},
 	{
 		title: 'Everything as code, in your repos',

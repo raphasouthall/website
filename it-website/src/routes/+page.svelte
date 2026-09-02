@@ -174,7 +174,8 @@
 				/>
 				<p class="text-base-content/60 leading-relaxed max-w-lg">
 					You deal with one person from the first call to the last commit. I take on one or two
-					clients at a time so I can answer the same day when something breaks.
+					clients at a time, working evenings and weekends by arrangement, and I reply within two
+					working days.
 				</p>
 			</div>
 
@@ -229,7 +230,7 @@
 			<SectionHeader
 				number="04"
 				title="Results"
-				subtitle="Three pieces of recent work. Clients are anonymised, the numbers are real."
+				subtitle="Three pieces of recent work from my current role, anonymised. None of it was delivered through SolidPlus."
 			/>
 		</div>
 
@@ -259,11 +260,11 @@
 
 			<div use:revealOnScroll={{ delay: 150 }} class="space-y-5">
 				<p class="text-base-content/70 leading-relaxed">
-					<strong class="text-base-content">Raphael Southall</strong> is an Azure infrastructure
-					engineer. My day job is running the cloud estate for the European arm of a Japanese shipping
-					group, which covers private AKS clusters, Terraform-managed landing zones, certificate
-					automation, Rapid7 vulnerability management and the monthly KPI reporting that goes to the
-					board. SolidPlus Ltd is the company I trade through for freelance work.
+					<strong class="text-base-content">I am Raphael Southall</strong>, an Azure infrastructure
+					engineer. My day job is running the cloud estate for a European shipping and logistics
+					group, which covers private AKS clusters, certificate automation, Rapid7 vulnerability
+					management and a monthly infrastructure KPI dashboard. SolidPlus Ltd is the company I
+					invoice freelance work through.
 				</p>
 				<p class="text-base-content/70 leading-relaxed">
 					I also build
@@ -390,7 +391,7 @@
 				<SectionHeader
 					number="07"
 					title="Get in Touch"
-					subtitle="Tell me what is broken or what you need built. I reply within one working day."
+					subtitle="Tell me what is broken or what you need built. I reply within two working days."
 					light
 				/>
 				<p class="text-neutral-content/60 leading-relaxed max-w-lg mb-8">
@@ -399,7 +400,7 @@
 					it would cost.
 				</p>
 				<div class="space-y-3 text-sm text-neutral-content/50">
-					<p>Availability is limited to one or two clients at a time, so it is worth asking early.</p>
+					<p>I work freelance alongside a full-time role, so delivery happens evenings and weekends by arrangement and I take one or two clients at a time.</p>
 					<p>
 						Prefer email?
 						<a href="mailto:admin@solidplus.tech" class="text-accent hover:underline">
@@ -417,7 +418,7 @@
 						</div>
 						<h3 class="font-heading text-xl font-bold text-neutral-content mb-2">Message sent</h3>
 						<p class="text-neutral-content/60 text-sm">
-							I will reply within one working day.
+							I will reply within two working days.
 						</p>
 					</div>
 				{:else}
@@ -500,7 +501,7 @@
 						{/if}
 
 						<p class="text-xs text-neutral-content/30 text-center">
-							I never share your details. I reply within one working day.
+							Your details go to admin@solidplus.tech via FormSubmit and nowhere else. I reply within two working days.
 						</p>
 					</form>
 				{/if}
