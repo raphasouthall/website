@@ -135,6 +135,25 @@
 						<li class="flex justify-between gap-4"><span class="text-ink-muted">Availability</span><span>1 to 2 clients at a time</span></li>
 						<li class="flex justify-between gap-4"><span class="text-ink-muted">Reply time</span><span>2 working days</span></li>
 					</ul>
+					<div class="border-t border-base-300/40 mt-5 pt-5">
+						<div class="eyebrow text-ink-subtle mb-3">Certifications</div>
+						<div class="flex items-center gap-4">
+							<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/" target="_blank" rel="noopener noreferrer" title="Azure Solutions Architect Expert (AZ-305), valid to June 2027">
+								<img src="/badges/az-305.svg" alt="Microsoft Certified: Azure Solutions Architect Expert" class="w-14 h-14" />
+							</a>
+							<a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/" target="_blank" rel="noopener noreferrer" title="Azure Administrator Associate (AZ-104), renewed 2026">
+								<img src="/badges/az-104.svg" alt="Microsoft Certified: Azure Administrator Associate" class="w-14 h-14" />
+							</a>
+							<a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank" rel="noopener noreferrer" title="AWS Certified Cloud Practitioner">
+								<img src="/badges/aws-ccp.png" alt="AWS Certified Cloud Practitioner" class="w-14 h-14" />
+							</a>
+							<div class="text-xs text-ink-muted leading-snug ml-1">
+								<div>AZ-305 Expert</div>
+								<div>AZ-104 Associate</div>
+								<div>AWS Cloud Practitioner</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
