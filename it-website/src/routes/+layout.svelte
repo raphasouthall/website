@@ -224,6 +224,7 @@
 			<div class="border-t border-neutral-content/10 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4">
 				<p class="text-xs text-neutral-content/40">
 					&copy; {new Date().getFullYear()} SolidPlus Ltd. Registered in Scotland, company number SC833008.
+					Registered office: School House, Fordyce, Banff AB45 2SJ.
 				</p>
 				<p class="text-xs text-neutral-content/40 italic">Azure infrastructure that stays up.</p>
 			</div>
