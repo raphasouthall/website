@@ -72,7 +72,7 @@
 		class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 border-b
 		       {scrolled
 			? 'bg-base-100/90 backdrop-blur-md border-base-300/40'
-			: 'bg-transparent border-transparent'}"
+			: 'bg-base-100/90 backdrop-blur-md border-transparent md:bg-transparent md:backdrop-blur-none'}"
 	>
 		<div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-18">
 			<!-- Logo -->

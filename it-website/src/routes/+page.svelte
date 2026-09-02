@@ -67,7 +67,7 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black"></div>
 
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-20 md:pb-28 w-full">
-		<div class="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-16 items-center">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 			<!-- Text -->
 			<div>
 				<div class="hero-animate">
@@ -80,7 +80,7 @@
 				</div>
 
 				<h1
-					class="hero-animate-delay-1 text-4xl md:text-5xl xl:text-[3.5rem] font-bold tracking-[-1.6px] leading-[1.17] mb-6"
+					class="hero-animate-delay-1 text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.5rem] font-bold tracking-[-1.6px] leading-[1.17] mb-6"
 				>
 					Azure infrastructure<br />
 					<span class="text-ink-muted">that stays up.</span>
@@ -109,7 +109,7 @@
 			</div>
 
 			<!-- Visual: fact card -->
-			<div class="hidden xl:block hero-animate-delay-2">
+			<div class="hidden lg:block hero-animate-delay-2">
 				<div class="bg-base-200 hairline rounded-xl p-6 max-w-md ml-auto">
 					<div class="grid grid-cols-3 gap-6 mb-6">
 						<div>
