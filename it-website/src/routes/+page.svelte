@@ -72,21 +72,21 @@
 			<div>
 				<div class="hero-animate">
 					<span
-						class="font-mono text-sm font-medium tracking-widest text-primary inline-flex items-center gap-3 mb-6"
+						class="eyebrow text-ink-muted inline-flex items-center gap-3 mb-6"
 					>
 						Freelance Azure Platform Engineer
-						<span class="block w-8 h-px bg-primary/60"></span>
+						<span class="block w-8 h-px bg-base-300"></span>
 					</span>
 				</div>
 
 				<h1
-					class="hero-animate-delay-1 font-heading text-4xl md:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] mb-6"
+					class="hero-animate-delay-1 text-4xl md:text-5xl lg:text-[3.5rem] font-bold tracking-[-1.6px] leading-[1.17] mb-6"
 				>
 					Azure infrastructure<br />
-					<span class="text-primary">that stays up.</span>
+					<span class="text-ink-muted">that stays up.</span>
 				</h1>
 
-				<p class="hero-animate-delay-2 text-lg md:text-xl text-neutral-content/70 leading-relaxed max-w-lg mb-10">
+				<p class="hero-animate-delay-2 text-lg text-ink-muted leading-[1.69] max-w-lg mb-10">
 					I am Raphael Southall. I build and run Azure landing zones, AKS clusters and the
 					automation around them for companies that cannot afford a bad change window.
 				</p>
@@ -97,13 +97,13 @@
 					</a>
 					<a
 						href="#services"
-						class="btn btn-ghost btn-lg rounded-lg text-base font-semibold text-neutral-content/80 hover:text-neutral-content border-neutral-content/20 hover:border-neutral-content/40"
+						class="btn btn-secondary btn-lg rounded-lg text-sm font-semibold border-0"
 					>
 						What I Do
 					</a>
 				</div>
 
-				<p class="hero-animate-delay-3 mt-5 text-sm text-neutral-content/40">
+				<p class="hero-animate-delay-3 mt-5 text-[13px] text-ink-subtle">
 					Free 30-minute call. I will tell you straight if I am the wrong person for the job.
 				</p>
 			</div>
@@ -115,16 +115,16 @@
 				</div>
 				<div class="grid grid-cols-3 gap-8 mt-12 text-center">
 					<div>
-						<div class="text-3xl font-extrabold text-accent">6+</div>
-						<div class="text-xs text-neutral-content/50 mt-1">years in Azure</div>
+						<div class="text-3xl font-bold tracking-[-0.6px]">6+</div>
+						<div class="text-xs text-ink-subtle mt-1">years in Azure</div>
 					</div>
 					<div>
-						<div class="text-3xl font-extrabold text-accent">AKS</div>
-						<div class="text-xs text-neutral-content/50 mt-1">in production</div>
+						<div class="text-3xl font-bold tracking-[-0.6px]">AKS</div>
+						<div class="text-xs text-ink-subtle mt-1">in production</div>
 					</div>
 					<div>
-						<div class="text-3xl font-extrabold text-accent">UK</div>
-						<div class="text-xs text-neutral-content/50 mt-1">based, remote</div>
+						<div class="text-3xl font-bold tracking-[-0.6px]">UK</div>
+						<div class="text-xs text-ink-subtle mt-1">based, remote</div>
 					</div>
 				</div>
 			</div>
@@ -132,7 +132,7 @@
 
 		<!-- Scroll indicator -->
 		<div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-			<IconArrowDown size={20} class="text-neutral-content/30" />
+			<IconArrowDown size={20} class="text-ink-subtle" />
 		</div>
 	</div>
 </section>
@@ -193,7 +193,7 @@
 <!-- ═══════════════════════════════════════════════════════════════
      WHY SOLIDPLUS
      ═══════════════════════════════════════════════════════════════ -->
-<section class="py-20 md:py-28 bg-secondary text-secondary-content">
+<section class="py-20 md:py-28 bg-base-200">
 	<div class="max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
@@ -208,13 +208,13 @@
 			{#each differentiators as diff, i}
 				<div
 					use:revealOnScroll={{ delay: i * 75 }}
-					class="border border-secondary-content/10 rounded-xl p-6 md:p-8 hover:bg-secondary-content/5 transition-colors"
+					class="hairline rounded-xl p-6 bg-base-100 transition-colors"
 				>
-					<div class="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center mb-4">
+					<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center mb-4">
 						<IconCheck size={16} class="text-accent" />
 					</div>
-					<h3 class="font-heading text-lg font-bold mb-3">{diff.title}</h3>
-					<p class="text-secondary-content/70 text-sm leading-relaxed">{diff.description}</p>
+					<h3 class="text-[22px] font-semibold tracking-[-0.4px] leading-[1.18] mb-3">{diff.title}</h3>
+					<p class="text-ink-muted text-sm leading-[1.71]">{diff.description}</p>
 				</div>
 			{/each}
 		</div>
@@ -272,7 +272,7 @@
 						href="https://neurostack.sh"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="text-primary hover:underline inline-flex items-center gap-1"
+						class="text-accent hover:underline inline-flex items-center gap-1"
 					>
 						NeuroStack <IconExternalLink size={14} />
 					</a>, an open-source memory server that gives AI coding agents durable, searchable context
@@ -320,9 +320,9 @@
 		</div>
 
 		<div class="space-y-4">
-			<div use:revealOnScroll class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
+			<div use:revealOnScroll class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">What kind of work do you take on?</div>
+				<div class="collapse-title font-semibold">What kind of work do you take on?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						Azure platform work: landing zones, networking, AKS, Terraform, pipelines, certificate
@@ -332,9 +332,9 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 50 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
+			<div use:revealOnScroll={{ delay: 50 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">How long does an engagement take?</div>
+				<div class="collapse-title font-semibold">How long does an engagement take?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						A cost or security review takes 1 to 2 weeks. A landing zone or AKS build takes 4 to 8
@@ -343,9 +343,9 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 100 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
+			<div use:revealOnScroll={{ delay: 100 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">How do you charge?</div>
+				<div class="collapse-title font-semibold">How do you charge?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						Fixed price for defined deliverables, day rate for open-ended operations work. Both are
@@ -355,9 +355,9 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 150 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
+			<div use:revealOnScroll={{ delay: 150 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">Can you work inside our tenant and our tooling?</div>
+				<div class="collapse-title font-semibold">Can you work inside our tenant and our tooling?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						Yes. I work in your Azure tenant with a guest account and your repositories in Azure
@@ -367,9 +367,9 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 200 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
+			<div use:revealOnScroll={{ delay: 200 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">What happens when you leave?</div>
+				<div class="collapse-title font-semibold">What happens when you leave?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						You keep everything: code, pipelines, a runbook and a recorded walkthrough. If you want
@@ -394,12 +394,12 @@
 					subtitle="Tell me what is broken or what you need built. I reply within two working days."
 					light
 				/>
-				<p class="text-neutral-content/60 leading-relaxed max-w-lg mb-8">
+				<p class="text-ink-muted leading-[1.69] max-w-lg mb-8">
 					The first call is free and lasts about 30 minutes. You describe the problem, I ask
 					questions, and by the end you will know whether I am the right person and roughly what
 					it would cost.
 				</p>
-				<div class="space-y-3 text-sm text-neutral-content/50">
+				<div class="space-y-3 text-sm text-ink-subtle">
 					<p>I work freelance alongside a full-time role, so delivery happens evenings and weekends by arrangement and I take one or two clients at a time.</p>
 					<p>
 						Prefer email?
@@ -416,15 +416,15 @@
 						<div class="w-12 h-12 rounded-full bg-success/20 flex items-center justify-center mx-auto mb-4">
 							<IconCheck size={24} class="text-success" />
 						</div>
-						<h3 class="font-heading text-xl font-bold text-neutral-content mb-2">Message sent</h3>
-						<p class="text-neutral-content/60 text-sm">
+						<h3 class="text-xl font-semibold text-base-content mb-2">Message sent</h3>
+						<p class="text-ink-muted text-sm">
 							I will reply within two working days.
 						</p>
 					</div>
 				{:else}
 					<form onsubmit={handleSubmit} class="space-y-5">
 						<div>
-							<label for="name" class="text-sm font-medium text-neutral-content/70 mb-1 block">
+							<label for="name" class="text-sm font-medium text-ink-muted mb-1 block">
 								Full Name *
 							</label>
 							<input
@@ -433,13 +433,13 @@
 								required
 								autocomplete="name"
 								bind:value={formName}
-								class="input input-bordered w-full bg-neutral-content/5 border-neutral-content/15 text-neutral-content placeholder:text-neutral-content/30 focus:border-primary"
+								class="input w-full bg-base-200 hairline text-base-content placeholder:text-ink-subtle focus:outline-1 focus:outline-accent"
 								placeholder="Your name"
 							/>
 						</div>
 
 						<div>
-							<label for="email" class="text-sm font-medium text-neutral-content/70 mb-1 block">
+							<label for="email" class="text-sm font-medium text-ink-muted mb-1 block">
 								Work Email *
 							</label>
 							<input
@@ -448,13 +448,13 @@
 								required
 								autocomplete="email"
 								bind:value={formEmail}
-								class="input input-bordered w-full bg-neutral-content/5 border-neutral-content/15 text-neutral-content placeholder:text-neutral-content/30 focus:border-primary"
+								class="input w-full bg-base-200 hairline text-base-content placeholder:text-ink-subtle focus:outline-1 focus:outline-accent"
 								placeholder="you@company.com"
 							/>
 						</div>
 
 						<div>
-							<label for="company" class="text-sm font-medium text-neutral-content/70 mb-1 block">
+							<label for="company" class="text-sm font-medium text-ink-muted mb-1 block">
 								Company *
 							</label>
 							<input
@@ -463,20 +463,20 @@
 								required
 								autocomplete="organization"
 								bind:value={formCompany}
-								class="input input-bordered w-full bg-neutral-content/5 border-neutral-content/15 text-neutral-content placeholder:text-neutral-content/30 focus:border-primary"
+								class="input w-full bg-base-200 hairline text-base-content placeholder:text-ink-subtle focus:outline-1 focus:outline-accent"
 								placeholder="Your organisation"
 							/>
 						</div>
 
 						<div>
-							<label for="message" class="text-sm font-medium text-neutral-content/70 mb-1 block">
+							<label for="message" class="text-sm font-medium text-ink-muted mb-1 block">
 								What are you working on?
 							</label>
 							<textarea
 								id="message"
 								rows="4"
 								bind:value={formMessage}
-								class="textarea textarea-bordered w-full bg-neutral-content/5 border-neutral-content/15 text-neutral-content placeholder:text-neutral-content/30 focus:border-primary"
+								class="textarea w-full bg-base-200 hairline text-base-content placeholder:text-ink-subtle focus:outline-1 focus:outline-accent"
 								placeholder="What is broken, or what needs building?"
 							></textarea>
 						</div>
@@ -500,7 +500,7 @@
 							</div>
 						{/if}
 
-						<p class="text-xs text-neutral-content/30 text-center">
+						<p class="text-xs text-ink-subtle text-center">
 							Your details go to admin@solidplus.tech via FormSubmit and nowhere else. I reply within two working days.
 						</p>
 					</form>

@@ -69,10 +69,10 @@
 	<!-- ── Nav ──────────────────────────────────────────── -->
 	<nav
 		aria-label="Primary navigation"
-		class="fixed top-0 left-0 right-0 z-50 transition-all duration-300
+		class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 border-b
 		       {scrolled
-			? 'bg-base-100/90 backdrop-blur-md shadow-sm'
-			: 'bg-transparent'}"
+			? 'bg-base-100/90 backdrop-blur-md border-base-300/40'
+			: 'bg-transparent border-transparent'}"
 	>
 		<div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-18">
 			<!-- Logo -->
@@ -85,10 +85,10 @@
 				{#each navItems as item}
 					<a
 						href="#{item.id}"
-						class="px-3 py-2 text-sm font-medium tracking-wide rounded-lg transition-colors duration-150
+						class="px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150
 						       {activeSection === item.id
-							? 'text-primary bg-primary/8'
-							: 'text-base-content/70 hover:text-base-content hover:bg-base-200'}"
+							? 'text-base-content bg-secondary'
+							: 'text-ink-muted hover:text-base-content hover:bg-base-200'}"
 					>
 						{item.label}
 					</a>
@@ -130,7 +130,7 @@
 
 			<!-- Drawer -->
 			<div
-				class="fixed top-16 right-4 left-4 z-50 md:hidden bg-base-100 rounded-xl shadow-xl border border-base-300 p-4"
+				class="fixed top-16 right-4 left-4 z-50 md:hidden bg-base-200 rounded-xl hairline p-4"
 			>
 				<div class="flex flex-col gap-1">
 					{#each navItems as item}
@@ -138,8 +138,8 @@
 							href="#{item.id}"
 							class="px-4 py-3 text-base font-medium rounded-lg transition-colors
 							       {activeSection === item.id
-								? 'text-primary bg-primary/8'
-								: 'text-base-content/70 hover:bg-base-200'}"
+								? 'text-base-content bg-secondary'
+								: 'text-ink-muted hover:bg-secondary'}"
 							onclick={closeSidebar}
 						>
 							{item.label}
@@ -168,7 +168,7 @@
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 				<!-- Brand -->
 				<div>
-					<div class="w-14 mb-4 invert opacity-90">
+					<div class="w-14 mb-4 opacity-90">
 						<Logo />
 					</div>
 					<p class="text-sm text-neutral-content/60 leading-relaxed max-w-xs">
@@ -221,7 +221,7 @@
 				</div>
 			</div>
 
-			<div class="border-t border-neutral-content/10 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4">
+			<div class="border-t border-base-300/40 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4">
 				<p class="text-xs text-neutral-content/40">
 					&copy; {new Date().getFullYear()} SolidPlus Ltd. Registered in Scotland, company number SC833008.
 					Registered office: School House, Fordyce, Banff AB45 2SJ.

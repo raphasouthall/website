@@ -5,28 +5,19 @@
 		subtitle?: string;
 		light?: boolean;
 	}
-	let { number, title, subtitle, light = false }: Props = $props();
+	let { number, title, subtitle }: Props = $props();
 </script>
 
 <div class="mb-12 md:mb-16">
-	<span
-		class="font-mono text-sm font-medium tracking-widest inline-flex items-center gap-3 mb-4
-		       {light ? 'text-primary' : 'text-primary'}"
-	>
+	<span class="eyebrow text-ink-muted inline-flex items-center gap-3 mb-4">
 		{number}
-		<span class="block w-8 h-px {light ? 'bg-primary/60' : 'bg-primary/60'}"></span>
+		<span class="block w-8 h-px bg-base-300"></span>
 	</span>
-	<h2
-		class="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight leading-tight
-		       {light ? 'text-white' : 'text-base-content'}"
-	>
+	<h2 class="text-3xl md:text-4xl lg:text-[2.5rem] font-semibold tracking-[-1px] leading-[1.19] text-base-content">
 		{title}
 	</h2>
 	{#if subtitle}
-		<p
-			class="mt-4 text-lg max-w-2xl leading-relaxed
-			       {light ? 'text-white/70' : 'text-base-content/60'}"
-		>
+		<p class="mt-4 text-lg max-w-2xl leading-[1.69] text-ink-muted">
 			{subtitle}
 		</p>
 	{/if}
