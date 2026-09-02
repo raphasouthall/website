@@ -58,7 +58,7 @@
      ═══════════════════════════════════════════════════════════════ -->
 <section
 	id="hero"
-	class="relative min-h-dvh flex items-center bg-neutral text-neutral-content overflow-hidden"
+	class="relative min-h-[85dvh] flex items-center bg-base-100 text-base-content overflow-hidden"
 >
 	<!-- Pattern overlay -->
 	<div
@@ -66,7 +66,7 @@
 		style="background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0); background-size: 32px 32px;"
 	></div>
 
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8 py-32 md:py-40 w-full">
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 py-24 md:py-28 w-full">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 			<!-- Text -->
 			<div>
@@ -103,29 +103,38 @@
 					</a>
 				</div>
 
-				<p class="hero-animate-delay-3 mt-5 text-[13px] text-ink-subtle">
+				<p class="hero-animate-delay-3 mt-5 text-[13px] text-ink-muted">
 					Free 30-minute call. I will tell you straight if I am the wrong person for the job.
 				</p>
 			</div>
 
-			<!-- Visual: Abstract logo + stats -->
-			<div class="hidden lg:flex flex-col items-center justify-center">
-				<div class="w-48 h-48 opacity-10">
-					<Logo />
-				</div>
-				<div class="grid grid-cols-3 gap-8 mt-12 text-center">
-					<div>
-						<div class="text-3xl font-bold tracking-[-0.6px]">6+</div>
-						<div class="text-xs text-ink-subtle mt-1">years in Azure</div>
+			<!-- Visual: fact card -->
+			<div class="hidden lg:block hero-animate-delay-2">
+				<div class="bg-base-200 hairline rounded-xl p-6 max-w-md ml-auto">
+					<div class="eyebrow text-ink-subtle mb-5 flex items-center gap-2">
+						<span class="w-2 h-2 rounded-full bg-accent"></span>
+						At a glance
 					</div>
-					<div>
-						<div class="text-3xl font-bold tracking-[-0.6px]">AKS</div>
-						<div class="text-xs text-ink-subtle mt-1">in production</div>
+					<div class="grid grid-cols-3 gap-6 mb-6">
+						<div>
+							<div class="text-3xl font-bold tracking-[-0.6px]">6+</div>
+							<div class="text-xs text-ink-muted mt-1">years in Azure</div>
+						</div>
+						<div>
+							<div class="text-3xl font-bold tracking-[-0.6px]">AKS</div>
+							<div class="text-xs text-ink-muted mt-1">in production</div>
+						</div>
+						<div>
+							<div class="text-3xl font-bold tracking-[-0.6px]">UK</div>
+							<div class="text-xs text-ink-muted mt-1">based, remote</div>
+						</div>
 					</div>
-					<div>
-						<div class="text-3xl font-bold tracking-[-0.6px]">UK</div>
-						<div class="text-xs text-ink-subtle mt-1">based, remote</div>
-					</div>
+					<ul class="border-t border-base-300/40 pt-5 space-y-3 text-sm">
+						<li class="flex justify-between gap-4"><span class="text-ink-muted">Stack</span><span>Azure, AKS, Terraform, ADO</span></li>
+						<li class="flex justify-between gap-4"><span class="text-ink-muted">Engagements</span><span>Fixed price or day rate</span></li>
+						<li class="flex justify-between gap-4"><span class="text-ink-muted">Availability</span><span>1 to 2 clients at a time</span></li>
+						<li class="flex justify-between gap-4"><span class="text-ink-muted">Reply time</span><span>2 working days</span></li>
+					</ul>
 				</div>
 			</div>
 		</div>
