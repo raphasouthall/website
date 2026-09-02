@@ -5,7 +5,10 @@
 		IconPlug,
 		IconBrain,
 		IconSearch,
-		IconUsers
+		IconUsers,
+		IconCloud,
+		IconShield,
+		IconCoins
 	} from '@tabler/icons-svelte';
 
 	interface Props {
@@ -22,7 +25,10 @@
 		plug: IconPlug,
 		brain: IconBrain,
 		search: IconSearch,
-		users: IconUsers
+		users: IconUsers,
+		cloud: IconCloud,
+		shield: IconShield,
+		coins: IconCoins
 	};
 
 	const IconComponent = $derived(iconMap[icon] || IconMap);

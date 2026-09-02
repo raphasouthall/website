@@ -57,10 +57,10 @@
 </script>
 
 <svelte:head>
-	<title>Enterprise AI Consulting UK | SolidPlus Ltd</title>
+	<title>Freelance Azure Platform Engineer UK | Raphael Southall, SolidPlus Ltd</title>
 	<meta
 		name="description"
-		content="SolidPlus delivers enterprise AI strategy, implementation, and governance for UK businesses. Measurable outcomes, no hype. Book a discovery call."
+		content="Raphael Southall builds and runs Azure landing zones, AKS clusters, Terraform and pipeline automation for UK and European companies. Book a free 30-minute call."
 	/>
 	<link rel="canonical" href="https://solidplus.tech/" />
 </svelte:head>
@@ -172,7 +172,7 @@
 						<Logo />
 					</div>
 					<p class="text-sm text-neutral-content/60 leading-relaxed max-w-xs">
-						Enterprise AI consultancy.<br />Clear thinking, solid foundations.
+						Freelance Azure platform engineering.<br />Raphael Southall, trading as SolidPlus Ltd.
 					</p>
 				</div>
 
@@ -223,9 +223,9 @@
 
 			<div class="border-t border-neutral-content/10 mt-12 pt-8 flex flex-col md:flex-row justify-between gap-4">
 				<p class="text-xs text-neutral-content/40">
-					&copy; {new Date().getFullYear()} SolidPlus Ltd. Registered in England and Wales.
+					&copy; {new Date().getFullYear()} SolidPlus Ltd. Registered in Scotland, company number SC833008.
 				</p>
-				<p class="text-xs text-neutral-content/40 italic">Technology made human.</p>
+				<p class="text-xs text-neutral-content/40 italic">Azure infrastructure that stays up.</p>
 			</div>
 		</div>
 	</footer>

@@ -74,7 +74,7 @@
 					<span
 						class="font-mono text-sm font-medium tracking-widest text-primary inline-flex items-center gap-3 mb-6"
 					>
-						Enterprise AI Consulting
+						Freelance Azure Platform Engineer
 						<span class="block w-8 h-px bg-primary/60"></span>
 					</span>
 				</div>
@@ -82,13 +82,13 @@
 				<h1
 					class="hero-animate-delay-1 font-heading text-4xl md:text-5xl lg:text-[3.5rem] font-black tracking-tight leading-[1.1] mb-6"
 				>
-					Technology<br />
-					<span class="text-primary">made human.</span>
+					Azure infrastructure<br />
+					<span class="text-primary">that stays up.</span>
 				</h1>
 
 				<p class="hero-animate-delay-2 text-lg md:text-xl text-neutral-content/70 leading-relaxed max-w-lg mb-10">
-					Accessible intelligence made for those who move the world. We care for your technology
-					as if it were our own — with clarity, warmth, and real partnership.
+					I am Raphael Southall. I build and run Azure landing zones, AKS clusters and the
+					automation around them for companies that cannot afford a bad change window.
 				</p>
 
 				<div class="hero-animate-delay-3 flex flex-wrap gap-4">
@@ -99,12 +99,12 @@
 						href="#services"
 						class="btn btn-ghost btn-lg rounded-lg text-base font-semibold text-neutral-content/80 hover:text-neutral-content border-neutral-content/20 hover:border-neutral-content/40"
 					>
-						How We Help
+						What I Do
 					</a>
 				</div>
 
 				<p class="hero-animate-delay-3 mt-5 text-sm text-neutral-content/40">
-					No commitment. Just a straight, honest conversation about your needs.
+					Free 30-minute call. I will tell you straight if I am the wrong person for the job.
 				</p>
 			</div>
 
@@ -115,16 +115,16 @@
 				</div>
 				<div class="grid grid-cols-3 gap-8 mt-12 text-center">
 					<div>
-						<div class="text-3xl font-extrabold text-accent">8wk</div>
-						<div class="text-xs text-neutral-content/50 mt-1">avg. to MVP</div>
+						<div class="text-3xl font-extrabold text-accent">6+</div>
+						<div class="text-xs text-neutral-content/50 mt-1">years in Azure</div>
 					</div>
 					<div>
-						<div class="text-3xl font-extrabold text-accent">100%</div>
-						<div class="text-xs text-neutral-content/50 mt-1">senior delivery</div>
+						<div class="text-3xl font-extrabold text-accent">AKS</div>
+						<div class="text-xs text-neutral-content/50 mt-1">in production</div>
 					</div>
 					<div>
-						<div class="text-3xl font-extrabold text-accent">Azure</div>
-						<div class="text-xs text-neutral-content/50 mt-1">specialist</div>
+						<div class="text-3xl font-extrabold text-accent">UK</div>
+						<div class="text-xs text-neutral-content/50 mt-1">based, remote</div>
 					</div>
 				</div>
 			</div>
@@ -145,8 +145,8 @@
 		<div use:revealOnScroll>
 			<SectionHeader
 				number="01"
-				title="What We Deliver"
-				subtitle="Six service areas, one through-line: making your AI investment legible, durable, and genuinely useful."
+				title="What I Do"
+				subtitle="Six things I get hired for. Each one ends with code in your repository and a runbook your team can follow."
 			/>
 		</div>
 
@@ -169,13 +169,12 @@
 			<div use:revealOnScroll>
 				<SectionHeader
 					number="02"
-					title="How We Work"
-					subtitle="A process designed around one question: what does good actually look like for you?"
+					title="How I Work"
+					subtitle="Four steps, a written scope before any work starts, and a handover at the end."
 				/>
 				<p class="text-base-content/60 leading-relaxed max-w-lg">
-					We don't believe in complicating things. SolidPlus was founded on a simple premise:
-					technology should serve people, not the other way around. We listen first, build with
-					care, and leave you with systems you truly own.
+					You deal with one person from the first call to the last commit. I take on one or two
+					clients at a time so I can answer the same day when something breaks.
 				</p>
 			</div>
 
@@ -198,8 +197,8 @@
 		<div use:revealOnScroll>
 			<SectionHeader
 				number="03"
-				title="Why SolidPlus"
-				subtitle="A few things that set us apart."
+				title="Why Hire Me"
+				subtitle="What you get from a single engineer that a consultancy bench cannot give you."
 				light
 			/>
 		</div>
@@ -230,7 +229,7 @@
 			<SectionHeader
 				number="04"
 				title="Results"
-				subtitle="Work we're proud of. Clients who'd rather stay anonymous — but kindly let us share the outcomes."
+				subtitle="Three pieces of recent work. Clients are anonymised, the numbers are real."
 			/>
 		</div>
 
@@ -253,21 +252,21 @@
 			<div use:revealOnScroll>
 				<SectionHeader
 					number="05"
-					title="The Founder"
-					subtitle="Built by someone who's been in the infrastructure."
+					title="About Me"
+					subtitle="An infrastructure engineer who runs production Azure for a living."
 				/>
 			</div>
 
 			<div use:revealOnScroll={{ delay: 150 }} class="space-y-5">
 				<p class="text-base-content/70 leading-relaxed">
-					<strong class="text-base-content">Rapha Southall</strong> is an infrastructure engineer and
-					AI systems architect with deep expertise in Microsoft Azure and enterprise cloud architecture.
-					Before founding SolidPlus, he spent years designing and operating the kind of production systems
-					that AI workloads actually have to run on — giving him a perspective that starts with "will this
-					hold up in production?" rather than "does this look good in a presentation?"
+					<strong class="text-base-content">Raphael Southall</strong> is an Azure infrastructure
+					engineer. My day job is running the cloud estate for the European arm of a Japanese shipping
+					group, which covers private AKS clusters, Terraform-managed landing zones, certificate
+					automation, Rapid7 vulnerability management and the monthly KPI reporting that goes to the
+					board. SolidPlus Ltd is the company I trade through for freelance work.
 				</p>
 				<p class="text-base-content/70 leading-relaxed">
-					He is the creator of
+					I also build
 					<a
 						href="https://neurostack.sh"
 						target="_blank"
@@ -275,15 +274,13 @@
 						class="text-primary hover:underline inline-flex items-center gap-1"
 					>
 						NeuroStack <IconExternalLink size={14} />
-					</a>, a neuroscience-grounded knowledge architecture that applies principles from cognitive
-					science — consolidation, associative retrieval, predictive coding — to the problem of
-					enterprise knowledge management.
+					</a>, an open-source memory server that gives AI coding agents durable, searchable context
+					across sessions. I run it on my own homelab and use it every day.
 				</p>
 				<p class="text-base-content/70 leading-relaxed">
-					Rapha is Brazilian-British, based in the UK, and works with organisations across Europe.
-					He believes the most valuable thing a technical advisor can offer is honest clarity — and
-					that the best measure of a successful engagement is whether the client needs you less at
-					the end than at the beginning.
+					I am Brazilian-British, based in the UK, and work remotely with teams across Europe. I
+					take on a small number of clients at a time and I would rather turn work down than do it
+					badly.
 				</p>
 
 				<div class="flex gap-4 pt-4">
@@ -324,61 +321,58 @@
 		<div class="space-y-4">
 			<div use:revealOnScroll class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">What does enterprise AI consulting involve?</div>
+				<div class="collapse-title font-bold">What kind of work do you take on?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						Enterprise AI consulting covers the full lifecycle: assessing your organisation's readiness,
-						defining an AI strategy aligned to business goals, selecting and implementing the right
-						technologies, and establishing governance frameworks. We work from strategy through to
-						production deployment.
+						Azure platform work: landing zones, networking, AKS, Terraform, pipelines, certificate
+						and secret automation, cost reviews and security hardening. I do not do application
+						development or generic IT support.
 					</p>
 				</div>
 			</div>
 
 			<div use:revealOnScroll={{ delay: 50 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">How long does a typical engagement take?</div>
+				<div class="collapse-title font-bold">How long does an engagement take?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						A focused strategy engagement runs 4-8 weeks. Implementation sprints deliver working systems
-						in 8-12 weeks. We design every engagement with speed-to-value in mind — no 18-month
-						transformation programmes.
+						A cost or security review takes 1 to 2 weeks. A landing zone or AKS build takes 4 to 8
+						weeks. Ongoing operations run on a monthly retainer with an agreed number of days.
 					</p>
 				</div>
 			</div>
 
 			<div use:revealOnScroll={{ delay: 100 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">Do you work with regulated industries?</div>
+				<div class="collapse-title font-bold">How do you charge?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						Yes. We have experience with financial services, professional services, and logistics clients
-						where regulatory compliance, data governance, and security are core considerations in every
-						engagement.
+						Fixed price for defined deliverables, day rate for open-ended operations work. Both are
+						written into the scope before I start. Invoices come from SolidPlus Ltd, a UK company,
+						so procurement gets a normal supplier.
 					</p>
 				</div>
 			</div>
 
 			<div use:revealOnScroll={{ delay: 150 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">What's the difference between AI strategy and implementation?</div>
+				<div class="collapse-title font-bold">Can you work inside our tenant and our tooling?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						AI strategy defines what to build and why — identifying use cases, assessing ROI, and creating
-						a roadmap. Implementation is the technical execution: building, integrating, and deploying AI
-						systems. SolidPlus provides both, end-to-end.
+						Yes. I work in your Azure tenant with a guest account and your repositories in Azure
+						DevOps or GitHub, so nothing lives in my environment. I follow your change process and
+						bring my own tooling only where you have none.
 					</p>
 				</div>
 			</div>
 
 			<div use:revealOnScroll={{ delay: 200 }} class="collapse collapse-arrow bg-white dark:bg-base-200 border border-base-300 rounded-xl">
 				<input type="radio" name="faq" />
-				<div class="collapse-title font-bold">How do you measure ROI?</div>
+				<div class="collapse-title font-bold">What happens when you leave?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						We define success metrics at the outset: cost reduction targets, time-to-value milestones,
-						and risk reduction KPIs. Every recommendation is tied to a measurable business outcome, not
-						technical capability alone.
+						You keep everything: code, pipelines, a runbook and a recorded walkthrough. If you want
+						me on call afterwards we agree a retainer, but the goal is that you do not need one.
 					</p>
 				</div>
 			</div>
@@ -396,16 +390,16 @@
 				<SectionHeader
 					number="07"
 					title="Get in Touch"
-					subtitle="Got a project in mind? Let's talk about whether we're the right fit."
+					subtitle="Tell me what is broken or what you need built. I reply within one working day."
 					light
 				/>
 				<p class="text-neutral-content/60 leading-relaxed max-w-lg mb-8">
-					We don't outsource relationships. When you work with us, you get a true partner — someone
-					who listens, understands your world, and cares about getting it right. The first
-					conversation is always free, always honest, and always worth having.
+					The first call is free and lasts about 30 minutes. You describe the problem, I ask
+					questions, and by the end you will know whether I am the right person and roughly what
+					it would cost.
 				</p>
 				<div class="space-y-3 text-sm text-neutral-content/50">
-					<p>No jargon. No pressure. Just a warm, honest conversation about where you are and where you want to go.</p>
+					<p>Availability is limited to one or two clients at a time, so it is worth asking early.</p>
 					<p>
 						Prefer email?
 						<a href="mailto:admin@solidplus.tech" class="text-accent hover:underline">
@@ -423,7 +417,7 @@
 						</div>
 						<h3 class="font-heading text-xl font-bold text-neutral-content mb-2">Message sent</h3>
 						<p class="text-neutral-content/60 text-sm">
-							We'll be in touch within one working day.
+							I will reply within one working day.
 						</p>
 					</div>
 				{:else}
@@ -482,7 +476,7 @@
 								rows="4"
 								bind:value={formMessage}
 								class="textarea textarea-bordered w-full bg-neutral-content/5 border-neutral-content/15 text-neutral-content placeholder:text-neutral-content/30 focus:border-primary"
-								placeholder="Tell us about your challenge..."
+								placeholder="What is broken, or what needs building?"
 							></textarea>
 						</div>
 
@@ -495,18 +489,18 @@
 								<span class="loading loading-spinner loading-sm"></span>
 								Sending...
 							{:else}
-								Start the Conversation
+								Book a Call
 							{/if}
 						</button>
 
 						{#if formState === 'error'}
 							<div class="text-error text-sm text-center">
-								Something went wrong. Please email us directly at admin@solidplus.tech
+								Something went wrong. Please email me directly at admin@solidplus.tech
 							</div>
 						{/if}
 
 						<p class="text-xs text-neutral-content/30 text-center">
-							Your information is never shared with third parties. We respond within one business day.
+							I never share your details. I reply within one working day.
 						</p>
 					</form>
 				{/if}

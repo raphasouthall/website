@@ -2,33 +2,33 @@ import type { Differentiator } from '$lib/types';
 
 export const differentiators: Differentiator[] = [
 	{
-		title: 'We care for your technology as if it were our own',
+		title: 'You work with me, not a bench',
 		description:
-			"This isn't a slogan — it's how we work. We treat every system, every decision, and every handover with the same care we'd want for our own projects."
+			'I scope the work, I do the work and I answer the phone when something breaks. There is no handover between a salesperson and a delivery team because there is only one person.'
 	},
 	{
-		title: 'Real support that speaks your language',
+		title: 'I run production, not slide decks',
 		description:
-			"We don't hide behind jargon or complexity. Whether we're talking to your engineers or your board, we communicate with clarity and warmth."
+			'My day job is operating Azure and AKS estates for a shipping group with real customers on them. The patterns I bring to your environment are the ones that survived 3am pages.'
 	},
 	{
-		title: 'Active listening, solid delivery',
+		title: 'Everything as code, in your repos',
 		description:
-			"We start by understanding — really understanding — where you are and where you need to go. Then we build with precision, transparency, and care."
+			'Terraform, Helm, pipeline YAML and PowerShell all land in your source control under your accounts. When I leave you keep the history and the ability to change it.'
 	},
 	{
-		title: 'We build for the team that comes after us',
+		title: 'Automation over runbooks',
 		description:
-			"Every engagement ends with your team stronger. We design systems your people can own, extend, and confidently explain — not black boxes that create dependency."
+			'If a task has run by hand twice I will turn it into a scheduled pipeline with alerting. Certificate renewals, KPI collection and vulnerability sprint planning have all gone this way.'
 	},
 	{
-		title: 'Deep expertise in knowledge systems',
+		title: 'Honest scoping',
 		description:
-			"We built NeuroStack, an open-source neuroscience-grounded knowledge architecture. This isn't theoretical — it's proven, published, and shapes how we approach every enterprise knowledge challenge."
+			'I will tell you when a piece of work is a week, when it is a quarter and when you do not need it. Fixed-price for defined pieces, day rate for open-ended operations.'
 	},
 	{
-		title: 'Fewer barriers, more clarity',
+		title: 'Written handover every time',
 		description:
-			"We solve before it gets complicated. Our approach removes friction at every step — accessible technology that grows with you, not against you."
+			'Each engagement ends with a runbook and a recorded walkthrough, so your team can operate what I built without booking me again.'
 	}
 ];

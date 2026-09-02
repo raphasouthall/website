@@ -26,7 +26,7 @@
 		</div>
 
 		<div>
-			<h4 class="font-bold text-sm text-base-content/50 uppercase tracking-wider mb-1">What we did</h4>
+			<h4 class="font-bold text-sm text-base-content/50 uppercase tracking-wider mb-1">What I did</h4>
 			<p class="text-sm leading-relaxed text-base-content/70">{solution}</p>
 		</div>
 
