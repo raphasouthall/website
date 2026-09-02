@@ -1,6 +1,6 @@
-<a href="/" class="flex select-none items-center justify-center size-full">
+<a href="/" class="flex select-none items-center justify-center w-full aspect-square">
 	<svg
-		class="fill-primary hover:fill-secondary transition-colors duration-300 h-fit"
+		class="fill-primary hover:fill-secondary transition-colors duration-300 w-full h-full block"
 		viewBox="0 0 190 190"
 		preserveAspectRatio="xMidYMax meet"
 		version="1.1"

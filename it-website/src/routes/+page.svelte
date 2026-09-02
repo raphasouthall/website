@@ -57,7 +57,7 @@
      ═══════════════════════════════════════════════════════════════ -->
 <section
 	id="hero"
-	class="relative bg-base-100 text-base-content overflow-hidden"
+	class="relative bg-base-100 text-base-content overflow-hidden flex items-center min-h-[calc(100dvh-4rem)] mt-16 md:mt-18"
 >
 	<!-- Background image + fade to canvas -->
 	<div
@@ -66,7 +66,7 @@
 	></div>
 	<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black"></div>
 
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-20 md:pb-28 w-full">
+	<div class="relative max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-8 py-16 md:py-24 w-full">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 			<!-- Text -->
 			<div>
@@ -80,7 +80,7 @@
 				</div>
 
 				<h1
-					class="hero-animate-delay-1 text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.5rem] font-bold tracking-[-1.6px] leading-[1.17] mb-6"
+					class="hero-animate-delay-1 text-[clamp(2.25rem,4.5vw,3.75rem)] 2xl:text-[4.5rem] font-bold tracking-[-0.03em] leading-[1.17] mb-6"
 				>
 					Azure infrastructure<br />
 					<span class="text-ink-muted">that stays up.</span>

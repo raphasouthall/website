@@ -69,14 +69,12 @@
 	<!-- ── Nav ──────────────────────────────────────────── -->
 	<nav
 		aria-label="Primary navigation"
-		class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 border-b
-		       {scrolled
-			? 'bg-base-100/90 backdrop-blur-md border-base-300/40'
-			: 'bg-base-100/90 backdrop-blur-md border-transparent md:bg-transparent md:backdrop-blur-none'}"
+		class="fixed top-0 left-0 right-0 z-50 h-16 md:h-18 border-b transition-colors duration-300 bg-base-100/90 backdrop-blur-md
+		       {scrolled ? 'border-base-300/40' : 'border-transparent'}"
 	>
-		<div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-18">
+		<div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-full">
 			<!-- Logo -->
-			<div class="w-12 md:w-14">
+			<div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
 				<Logo />
 			</div>
 
@@ -168,7 +166,7 @@
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 				<!-- Brand -->
 				<div>
-					<div class="w-14 mb-4 opacity-90">
+					<div class="w-14 h-14 mb-4 opacity-90">
 						<Logo />
 					</div>
 					<p class="text-sm text-neutral-content/60 leading-relaxed max-w-xs">
