@@ -60,11 +60,12 @@
 	id="hero"
 	class="relative min-h-[85dvh] flex items-center bg-base-100 text-base-content overflow-hidden"
 >
-	<!-- Pattern overlay -->
+	<!-- Background image + fade to canvas -->
 	<div
-		class="absolute inset-0 opacity-[0.06]"
-		style="background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0); background-size: 32px 32px;"
+		class="absolute inset-0 bg-cover bg-center opacity-70"
+		style="background-image: url('/hero-bg.jpg');"
 	></div>
+	<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black"></div>
 
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 py-24 md:py-28 w-full">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
