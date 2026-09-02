@@ -106,6 +106,24 @@
 				<p class="hero-animate-delay-3 mt-5 text-[13px] text-ink-muted">
 					Free 30-minute call. If the work needs someone else, I will say so on the call.
 				</p>
+
+				<!-- Badges (mobile/tablet only; desktop shows them in the card) -->
+				<div class="hero-animate-delay-3 lg:hidden mt-8 flex items-center gap-4">
+					<a href="https://learn.microsoft.com/api/credentials/share/en-us/RaphaelSouthall-4250/A8AD6AA64927B2F7?sharingId=AC7138B7C9203A1D" target="_blank" rel="noopener noreferrer" title="Azure Solutions Architect Expert (AZ-305)">
+						<img src="/badges/az-305.svg" alt="Microsoft Certified: Azure Solutions Architect Expert" class="w-12 h-12" />
+					</a>
+					<a href="https://learn.microsoft.com/api/credentials/share/en-us/RaphaelSouthall-4250/6AB76ADFCF71A548?sharingId=AC7138B7C9203A1D" target="_blank" rel="noopener noreferrer" title="Azure Administrator Associate (AZ-104)">
+						<img src="/badges/az-104.svg" alt="Microsoft Certified: Azure Administrator Associate" class="w-12 h-12" />
+					</a>
+					<a href="https://www.credly.com/badges/5647d8d5-cc44-4b20-b786-c1cee518e65d/public_url" target="_blank" rel="noopener noreferrer" title="AWS Certified Cloud Practitioner">
+						<img src="/badges/aws-ccp.png" alt="AWS Certified Cloud Practitioner" class="w-12 h-12" />
+					</a>
+					<div class="text-xs text-ink-muted leading-snug">
+						<div>AZ-305 Expert</div>
+						<div>AZ-104 Associate</div>
+						<div>AWS Cloud Practitioner</div>
+					</div>
+				</div>
 			</div>
 
 			<!-- Visual: fact card -->
