@@ -183,7 +183,7 @@
      SERVICES
      ═══════════════════════════════════════════════════════════════ -->
 <section id="services" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg flipX shiftX={-8} scale={1.35} />
+	<SectionBg flipX shiftX={-4} scale={1.12} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -207,7 +207,7 @@
      PROCESS
      ═══════════════════════════════════════════════════════════════ -->
 <section id="process" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg flipY shiftX={6} scale={1.1} />
+	<SectionBg flipY shiftX={3} scale={1.04} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div>
@@ -236,7 +236,7 @@
      WHY SOLIDPLUS
      ═══════════════════════════════════════════════════════════════ -->
 <section data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg flipX flipY shiftX={-5} scale={1.6} />
+	<SectionBg flipX flipY shiftX={-3} scale={1.18} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -265,7 +265,7 @@
      CASE STUDIES
      ═══════════════════════════════════════════════════════════════ -->
 <section id="results" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg shiftX={8} scale={1.2} />
+	<SectionBg shiftX={4} scale={1.06} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -289,7 +289,7 @@
      ABOUT / FOUNDER
      ═══════════════════════════════════════════════════════════════ -->
 <section id="about" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg flipY shiftX={-6} scale={1.45} />
+	<SectionBg flipY shiftX={-3} scale={1.15} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 			<div>
@@ -348,7 +348,7 @@
      FAQ
      ═══════════════════════════════════════════════════════════════ -->
 <section data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg flipX shiftX={5} scale={1.08} />
+	<SectionBg flipX shiftX={3} scale={1.03} />
 	<div class="relative max-w-3xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -420,7 +420,7 @@
      CONTACT
      ═══════════════════════════════════════════════════════════════ -->
 <section id="contact" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
-	<SectionBg flipX flipY shiftX={0} scale={1.3} />
+	<SectionBg flipX flipY shiftX={0} scale={1.1} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div>
