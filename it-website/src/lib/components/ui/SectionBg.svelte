@@ -10,7 +10,7 @@
 </script>
 
 <!-- Hero image reused per section: mirrored on X and/or Y and shifted sideways, no rotation so edges never show -->
-<div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+<div class="absolute inset-[-15%] overflow-hidden pointer-events-none" aria-hidden="true" data-bg>
 	<div
 		class="absolute inset-0 bg-cover bg-center"
 		style="background-image: url('/hero-bg.jpg'); opacity: {opacity}; transform: translateX({shiftX}%) scaleX({flipX ? -scale : scale}) scaleY({flipY ? -scale : scale});"

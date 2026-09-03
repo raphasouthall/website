@@ -8,13 +8,16 @@
 	import { processSteps } from '$lib/data/process';
 	import { caseStudies } from '$lib/data/caseStudies';
 	import { differentiators } from '$lib/data/differentiators';
-	import { revealOnScroll } from '$lib/utils/revealOnScroll';
+	import { initScroll } from '$lib/utils/scroll';
+	import { onMount } from 'svelte';
 	import Logo from '$lib/Logo.svelte';
 	import {
 		IconCheck,
 		IconBrandGithub,
 		IconExternalLink
 	} from '@tabler/icons-svelte';
+
+	onMount(() => initScroll());
 
 	let formState = $state<'idle' | 'submitting' | 'success' | 'error'>('idle');
 	let formName = $state('');
@@ -58,7 +61,8 @@
      ═══════════════════════════════════════════════════════════════ -->
 <section
 	id="hero"
-	class="relative bg-base-100 text-base-content overflow-hidden flex items-center min-h-[calc(100dvh-4rem)] mt-16 md:mt-18"
+	data-snap
+	class="relative bg-base-100 text-base-content overflow-hidden flex items-center min-h-dvh pt-16 md:pt-18"
 >
 	<!-- Background image + fade to canvas -->
 	<div
@@ -67,7 +71,7 @@
 	></div>
 	<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black"></div>
 
-	<div class="relative max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-8 py-16 md:py-24 w-full">
+	<div class="relative max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-8 py-16 md:py-24 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 			<!-- Text -->
 			<div>
@@ -178,10 +182,10 @@
 <!-- ═══════════════════════════════════════════════════════════════
      SERVICES
      ═══════════════════════════════════════════════════════════════ -->
-<section id="services" class="relative py-20 md:py-28 bg-base-100">
+<section id="services" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg flipX shiftX={-8} scale={1.35} />
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
-		<div use:revealOnScroll>
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
+		<div>
 			<SectionHeader
 				number="01"
 				title="What I Do"
@@ -191,7 +195,7 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			{#each services as service, i}
-				<div use:revealOnScroll={{ delay: i * 75 }}>
+				<div>
 					<ServiceCard {...service} />
 				</div>
 			{/each}
@@ -202,11 +206,11 @@
 <!-- ═══════════════════════════════════════════════════════════════
      PROCESS
      ═══════════════════════════════════════════════════════════════ -->
-<section id="process" class="relative py-20 md:py-28 bg-base-100">
+<section id="process" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg flipY shiftX={6} scale={1.1} />
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-			<div use:revealOnScroll>
+			<div>
 				<SectionHeader
 					number="02"
 					title="How I Work"
@@ -219,7 +223,7 @@
 
 			<div>
 				{#each processSteps as step, i}
-					<div use:revealOnScroll={{ delay: i * 100 }}>
+					<div>
 						<ProcessStep {...step} isLast={i === processSteps.length - 1} />
 					</div>
 				{/each}
@@ -231,10 +235,10 @@
 <!-- ═══════════════════════════════════════════════════════════════
      WHY SOLIDPLUS
      ═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 md:py-28 bg-base-100">
+<section data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg flipX flipY shiftX={-5} scale={1.6} />
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
-		<div use:revealOnScroll>
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
+		<div>
 			<SectionHeader
 				number="03"
 				title="Why Hire Me"
@@ -245,10 +249,7 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			{#each differentiators as diff, i}
-				<div
-					use:revealOnScroll={{ delay: i * 75 }}
-					class="glass-card hairline rounded-xl p-6 transition-colors"
-				>
+				<div class="glass-card hairline rounded-xl p-6 transition-colors">
 					<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center mb-4">
 						<IconCheck size={16} class="text-accent" />
 					</div>
@@ -263,10 +264,10 @@
 <!-- ═══════════════════════════════════════════════════════════════
      CASE STUDIES
      ═══════════════════════════════════════════════════════════════ -->
-<section id="results" class="relative py-20 md:py-28 bg-base-100">
+<section id="results" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg shiftX={8} scale={1.2} />
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
-		<div use:revealOnScroll>
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
+		<div>
 			<SectionHeader
 				number="04"
 				title="Results"
@@ -276,7 +277,7 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			{#each caseStudies as study, i}
-				<div use:revealOnScroll={{ delay: i * 100 }}>
+				<div>
 					<CaseStudyCard {...study} />
 				</div>
 			{/each}
@@ -287,11 +288,11 @@
 <!-- ═══════════════════════════════════════════════════════════════
      ABOUT / FOUNDER
      ═══════════════════════════════════════════════════════════════ -->
-<section id="about" class="relative py-20 md:py-28 bg-base-100">
+<section id="about" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg flipY shiftX={-6} scale={1.45} />
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-			<div use:revealOnScroll>
+			<div>
 				<SectionHeader
 					number="05"
 					title="About Me"
@@ -299,7 +300,7 @@
 				/>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 150 }} class="space-y-5">
+			<div class="space-y-5">
 				<p class="text-base-content/70 leading-relaxed">
 					<strong class="text-base-content">I am Raphael Southall</strong>, an Azure infrastructure
 					engineer. By day I run the Azure estate for a European logistics company. SolidPlus Ltd is
@@ -346,10 +347,10 @@
 <!-- ═══════════════════════════════════════════════════════════════
      FAQ
      ═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 md:py-28 bg-base-100">
+<section data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg flipX shiftX={5} scale={1.08} />
-	<div class="relative max-w-3xl mx-auto px-4 md:px-8">
-		<div use:revealOnScroll>
+	<div class="relative max-w-3xl mx-auto px-4 md:px-8 w-full" data-content>
+		<div>
 			<SectionHeader
 				number="06"
 				title="Common Questions"
@@ -357,7 +358,7 @@
 		</div>
 
 		<div class="space-y-4">
-			<div use:revealOnScroll class="collapse collapse-arrow glass-card hairline rounded-xl">
+			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">What kind of work do you take on?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -368,7 +369,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 50 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
+			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">How long does an engagement take?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -379,7 +380,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 100 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
+			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">How do you charge?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -390,7 +391,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 150 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
+			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">Can you work inside our tenant and our tooling?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -401,7 +402,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 200 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
+			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">What happens when you leave?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -418,11 +419,11 @@
 <!-- ═══════════════════════════════════════════════════════════════
      CONTACT
      ═══════════════════════════════════════════════════════════════ -->
-<section id="contact" class="relative py-20 md:py-28 bg-base-100 text-base-content">
+<section id="contact" data-snap class="relative min-h-dvh flex items-center pt-24 pb-12 md:pt-28 md:pb-16 bg-base-100 overflow-hidden">
 	<SectionBg flipX flipY shiftX={0} scale={1.3} />
-	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-			<div use:revealOnScroll>
+			<div>
 				<SectionHeader
 					number="07"
 					title="Get in Touch"
@@ -444,7 +445,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 150 }}>
+			<div>
 				{#if formState === 'success'}
 					<div class="bg-success/10 border border-success/20 rounded-xl p-8 text-center">
 						<div class="w-12 h-12 rounded-full bg-success/20 flex items-center justify-center mx-auto mb-4">

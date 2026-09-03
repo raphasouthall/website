@@ -35,7 +35,7 @@
 </script>
 
 <div class="card glass-card hairline h-full hover:bg-secondary transition-colors duration-200">
-	<div class="card-body gap-4 p-6">
+	<div class="card-body gap-3 p-5">
 		<div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-accent">
 			<IconComponent size={20} />
 		</div>
