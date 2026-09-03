@@ -86,8 +86,8 @@
 					<span class="text-ink-muted">that stays up.</span>
 				</h1>
 
-				<p class="hero-animate-delay-2 text-lg text-ink-muted leading-[1.69] max-w-lg mb-10">
-					I am Raphael Southall. I build and run Azure landing zones, AKS clusters and the
+				<p class="hero-animate-delay-2 text-lg xl:text-xl 2xl:text-2xl text-ink-muted leading-[1.69] max-w-lg 2xl:max-w-xl mb-10">
+					I am Raphael Southall. I build and run Azure infrastructure, AKS clusters and the
 					automation around them for companies whose customers notice when a change goes wrong.
 				</p>
 
@@ -103,8 +103,8 @@
 					</a>
 				</div>
 
-				<p class="hero-animate-delay-3 mt-5 text-[13px] text-ink-muted">
-					Free 30-minute call. If the work needs someone else, I will say so on the call.
+				<p class="hero-animate-delay-3 mt-5 text-[13px] xl:text-sm 2xl:text-base text-ink-muted">
+					Free 30-minute call.
 				</p>
 
 				<!-- Badges (mobile/tablet only; desktop shows them in the card) -->
