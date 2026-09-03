@@ -3,6 +3,7 @@
 	import ServiceCard from '$lib/components/ui/ServiceCard.svelte';
 	import ProcessStep from '$lib/components/ui/ProcessStep.svelte';
 	import CaseStudyCard from '$lib/components/ui/CaseStudyCard.svelte';
+	import SectionBg from '$lib/components/ui/SectionBg.svelte';
 	import { services } from '$lib/data/services';
 	import { processSteps } from '$lib/data/process';
 	import { caseStudies } from '$lib/data/caseStudies';
@@ -177,8 +178,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      SERVICES
      ═══════════════════════════════════════════════════════════════ -->
-<section id="services" class="py-20 md:py-28 bg-base-100">
-	<div class="max-w-7xl mx-auto px-4 md:px-8">
+<section id="services" class="relative py-20 md:py-28 bg-base-100">
+	<SectionBg rotate={180} scale={1.5} opacity={0.8} />
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
 				number="01"
@@ -200,8 +202,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      PROCESS
      ═══════════════════════════════════════════════════════════════ -->
-<section id="process" class="py-20 md:py-28 bg-base-200">
-	<div class="max-w-7xl mx-auto px-4 md:px-8">
+<section id="process" class="relative py-20 md:py-28 bg-base-100">
+	<SectionBg rotate={90} scale={1.8} opacity={0.8} flip />
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div use:revealOnScroll>
 				<SectionHeader
@@ -228,8 +231,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      WHY SOLIDPLUS
      ═══════════════════════════════════════════════════════════════ -->
-<section class="py-20 md:py-28 bg-base-200">
-	<div class="max-w-7xl mx-auto px-4 md:px-8">
+<section class="relative py-20 md:py-28 bg-base-100">
+	<SectionBg rotate={-30} scale={2.2} opacity={0.8} />
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
 				number="03"
@@ -259,8 +263,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      CASE STUDIES
      ═══════════════════════════════════════════════════════════════ -->
-<section id="results" class="py-20 md:py-28 bg-base-100">
-	<div class="max-w-7xl mx-auto px-4 md:px-8">
+<section id="results" class="relative py-20 md:py-28 bg-base-100">
+	<SectionBg rotate={270} scale={1.6} opacity={0.8} flip />
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
 				number="04"
@@ -282,8 +287,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      ABOUT / FOUNDER
      ═══════════════════════════════════════════════════════════════ -->
-<section id="about" class="py-20 md:py-28 bg-base-200">
-	<div class="max-w-7xl mx-auto px-4 md:px-8">
+<section id="about" class="relative py-20 md:py-28 bg-base-100">
+	<SectionBg rotate={45} scale={2} opacity={0.8} />
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 			<div use:revealOnScroll>
 				<SectionHeader
@@ -340,8 +346,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      FAQ
      ═══════════════════════════════════════════════════════════════ -->
-<section class="py-20 md:py-28 bg-base-100">
-	<div class="max-w-3xl mx-auto px-4 md:px-8">
+<section class="relative py-20 md:py-28 bg-base-100">
+	<SectionBg rotate={210} scale={1.7} opacity={0.8} flip />
+	<div class="relative max-w-3xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
 				number="06"
@@ -411,8 +418,9 @@
 <!-- ═══════════════════════════════════════════════════════════════
      CONTACT
      ═══════════════════════════════════════════════════════════════ -->
-<section id="contact" class="py-20 md:py-28 bg-neutral text-neutral-content">
-	<div class="max-w-7xl mx-auto px-4 md:px-8">
+<section id="contact" class="relative py-20 md:py-28 bg-base-100 text-base-content">
+	<SectionBg rotate={0} scale={1.3} opacity={0.8} flip />
+	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div use:revealOnScroll>
 				<SectionHeader
