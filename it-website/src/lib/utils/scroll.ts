@@ -9,6 +9,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
  */
 export function initScroll(): () => void {
 	gsap.registerPlugin(ScrollTrigger);
+	ScrollTrigger.config({ ignoreMobileResize: true });
+	ScrollTrigger.normalizeScroll(true);
+	gsap.config({ force3D: true });
 
 	const sections = gsap.utils.toArray<HTMLElement>('section[data-snap]');
 	if (sections.length === 0) return () => {};
@@ -73,5 +76,6 @@ export function initScroll(): () => void {
 
 	return () => {
 		for (const t of triggers) t.kill();
+		ScrollTrigger.normalizeScroll(false);
 	};
 }

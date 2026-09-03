@@ -46,14 +46,12 @@
 			<linearGradient id="{uid}-edge" x1="0" y1="0" x2="0" y2="1">
 				<stop offset="0" stop-color="#fff" stop-opacity="0.36" /><stop offset="0.5" stop-color="#fff" stop-opacity="0" />
 			</linearGradient>
-			<filter id="{uid}-frost" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="14" /></filter>
 		</defs>
 
 
 		{#each bands as b}
-			<g data-band data-speed={b.speed}>
-				<polygon points={b.points} fill="url(#{uid}-{b.fill})" filter="url(#{uid}-frost)" opacity="0.7" />
-				<polygon points={b.points} fill="url(#{uid}-{b.fill})" opacity="0.72" />
+			<g data-band data-speed={b.speed} style="will-change: transform">
+				<polygon points={b.points} fill="url(#{uid}-{b.fill})" opacity="0.85" />
 				{#if b.edge}
 					<line x1={b.edge[0]} y1={b.edge[1]} x2={b.edge[2]} y2={b.edge[3]} stroke="url(#{uid}-edge)" stroke-width="1.5" />
 				{/if}
