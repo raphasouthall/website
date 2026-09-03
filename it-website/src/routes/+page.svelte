@@ -64,12 +64,7 @@
 	data-snap
 	class="relative bg-base-100 text-base-content overflow-hidden flex items-center min-h-dvh pt-16 md:pt-18"
 >
-	<!-- Background image + fade to canvas -->
-	<div
-		class="absolute inset-0 bg-cover bg-center opacity-70"
-		style="background-image: url('/hero-bg.svg');"
-	></div>
-	<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black"></div>
+	<SectionBg scale={0.95} opacity={0.75} />
 
 	<div class="relative max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-8 py-16 md:py-24 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -183,7 +178,7 @@
      SERVICES
      ═══════════════════════════════════════════════════════════════ -->
 <section id="services" data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg flipX shiftX={-4} scale={1.12} />
+	<SectionBg flipX shiftX={-4} scale={0.95} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -207,7 +202,7 @@
      PROCESS
      ═══════════════════════════════════════════════════════════════ -->
 <section id="process" data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg flipY shiftX={3} scale={1.04} />
+	<SectionBg flipY shiftX={3} scale={0.9} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div>
@@ -236,7 +231,7 @@
      WHY SOLIDPLUS
      ═══════════════════════════════════════════════════════════════ -->
 <section data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg flipX flipY shiftX={-3} scale={1.18} />
+	<SectionBg flipX flipY shiftX={-3} scale={1} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -265,7 +260,7 @@
      CASE STUDIES
      ═══════════════════════════════════════════════════════════════ -->
 <section id="results" data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg shiftX={4} scale={1.06} />
+	<SectionBg shiftX={4} scale={0.92} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -289,7 +284,7 @@
      ABOUT / FOUNDER
      ═══════════════════════════════════════════════════════════════ -->
 <section id="about" data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg flipY shiftX={-3} scale={1.15} />
+	<SectionBg flipY shiftX={-3} scale={0.97} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 			<div>
@@ -348,7 +343,7 @@
      FAQ
      ═══════════════════════════════════════════════════════════════ -->
 <section data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg flipX shiftX={3} scale={1.03} />
+	<SectionBg flipX shiftX={3} scale={0.9} />
 	<div class="relative max-w-3xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div>
 			<SectionHeader
@@ -420,7 +415,7 @@
      CONTACT
      ═══════════════════════════════════════════════════════════════ -->
 <section id="contact" data-snap class="relative min-h-dvh flex items-center py-32 md:py-40 bg-base-100 overflow-hidden">
-	<SectionBg flipX flipY shiftX={0} scale={1.1} />
+	<SectionBg flipX flipY shiftX={0} scale={0.94} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8 w-full" data-content>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div>

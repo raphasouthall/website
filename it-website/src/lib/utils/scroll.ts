@@ -33,18 +33,20 @@ export function initScroll(): () => void {
 		})
 	);
 
-	// Parallax the background layer and fade content in as each section enters
+	// Each background band drifts at its own speed while the section passes; content fades in
 	for (const section of sections) {
-		const bg = section.querySelector<HTMLElement>('[data-bg]');
+		const bands = section.querySelectorAll<SVGGElement>('[data-band]');
 		const content = section.querySelector<HTMLElement>('[data-content]');
 
-		if (bg) {
+		for (const band of bands) {
+			const speed = Number(band.dataset.speed ?? 0.5);
 			triggers.push(
 				gsap.fromTo(
-					bg,
-					{ yPercent: -12 },
+					band,
+					{ x: -90 * speed, y: 40 * speed },
 					{
-						yPercent: 12,
+						x: 90 * speed,
+						y: -40 * speed,
 						ease: 'none',
 						scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: true }
 					}
