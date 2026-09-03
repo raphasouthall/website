@@ -4,25 +4,22 @@ export const processSteps: ProcessStep[] = [
 	{
 		number: '01',
 		title: 'Discovery call',
-		description:
-			'You describe the problem on a free 30-minute call and I ask questions. I will tell you on the call whether this is work I should take on.'
+		description: 'A free 30-minute call. You describe the problem and I say whether I can help.'
 	},
 	{
 		number: '02',
 		title: 'Written scope',
 		description:
-			'Within 3 working days you get a one-page scope with deliverables, what I need access to, a price and a start date. You accept it or we change it before any work begins.'
+			'Within 3 working days you get a one-page scope with deliverables, price and start date.'
 	},
 	{
 		number: '03',
 		title: 'Build in the open',
-		description:
-			'I work in your repositories and your Azure tenant, with a short written update at the end of each week. You can see every commit and every pipeline run as it happens.'
+		description: 'I work in your tenant and your repos, with a short written update each week.'
 	},
 	{
 		number: '04',
 		title: 'Handover',
-		description:
-			'I finish with a runbook, a recorded walkthrough and a list of anything I would do next. If you want ongoing support we agree a retainer separately.'
+		description: 'You get a runbook, a recorded walkthrough and a list of what I would do next.'
 	}
 ];

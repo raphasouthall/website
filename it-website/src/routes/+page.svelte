@@ -88,7 +88,7 @@
 
 				<p class="hero-animate-delay-2 text-lg xl:text-xl 2xl:text-2xl text-ink-muted leading-[1.69] max-w-lg 2xl:max-w-xl mb-10">
 					I am Raphael Southall. I build and run Azure infrastructure, AKS clusters and the
-					automation around them for companies whose customers notice when a change goes wrong.
+					automation around them for companies running production on Azure.
 				</p>
 
 				<div class="hero-animate-delay-3 flex flex-wrap gap-4">
@@ -183,7 +183,7 @@
 			<SectionHeader
 				number="01"
 				title="What I Do"
-				subtitle="Six things I get hired for. Each one ends with code in your repository and a runbook your team can follow."
+				subtitle="Six things I get hired for."
 			/>
 		</div>
 
@@ -207,12 +207,10 @@
 				<SectionHeader
 					number="02"
 					title="How I Work"
-					subtitle="Four steps, a written scope before any work starts, and a handover at the end."
+					subtitle="Four steps. A written scope before any work starts."
 				/>
 				<p class="text-base-content/60 leading-relaxed max-w-lg">
-					You deal with one person from the first call to the last commit. I take on one or two
-					clients at a time, working evenings and weekends by arrangement, and I reply within two
-					working days.
+					One or two clients at a time, evenings and weekends, reply within two working days.
 				</p>
 			</div>
 
@@ -236,12 +234,12 @@
 			<SectionHeader
 				number="03"
 				title="Why Hire Me"
-				subtitle="What you get from a single engineer that a consultancy bench cannot give you."
+				subtitle="What a single engineer gives you."
 				light
 			/>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			{#each differentiators as diff, i}
 				<div
 					use:revealOnScroll={{ delay: i * 75 }}
@@ -267,7 +265,7 @@
 			<SectionHeader
 				number="04"
 				title="Results"
-				subtitle="Three pieces of recent work from my current role, anonymised. None of it was delivered through SolidPlus."
+				subtitle="Recent work from my current role, anonymised. None of it was delivered through SolidPlus."
 			/>
 		</div>
 
@@ -291,17 +289,15 @@
 				<SectionHeader
 					number="05"
 					title="About Me"
-					subtitle="An infrastructure engineer who runs production Azure for a living."
+					subtitle="I run production Azure for a living."
 				/>
 			</div>
 
 			<div use:revealOnScroll={{ delay: 150 }} class="space-y-5">
 				<p class="text-base-content/70 leading-relaxed">
 					<strong class="text-base-content">I am Raphael Southall</strong>, an Azure infrastructure
-					engineer. My day job is running the cloud estate for a European shipping and logistics
-					group, which covers private AKS clusters, certificate automation, Rapid7 vulnerability
-					management and a monthly infrastructure KPI dashboard. SolidPlus Ltd is the company I
-					invoice freelance work through.
+					engineer. By day I run the Azure estate for a European logistics company. SolidPlus Ltd is
+					the company I invoice freelance work through.
 				</p>
 				<p class="text-base-content/70 leading-relaxed">
 					I also build
@@ -312,13 +308,10 @@
 						class="text-accent hover:underline inline-flex items-center gap-1"
 					>
 						NeuroStack <IconExternalLink size={14} />
-					</a>, an open-source memory server that gives AI coding agents durable, searchable context
-					across sessions. I run it on my own homelab and use it every day.
+					</a>, an open-source memory server for AI coding agents.
 				</p>
 				<p class="text-base-content/70 leading-relaxed">
-					I am Brazilian-British, based in the UK, and work remotely with teams across Europe. I
-					take on a small number of clients at a time and I would rather turn work down than do it
-					badly.
+					Brazilian-British, based in the UK, working remotely with teams across Europe.
 				</p>
 
 				<div class="flex gap-4 pt-4">
@@ -362,9 +355,8 @@
 				<div class="collapse-title font-semibold">What kind of work do you take on?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						I take on Azure platform work, which covers landing zones, networking, AKS, Terraform,
-						pipelines, certificate and secret automation, cost reviews and security hardening.
-						Application development and desktop support sit outside what I offer.
+						Azure platform work, which covers foundations, networking, AKS, Terraform, pipelines,
+						certificates, cost and security. Application development is out of scope.
 					</p>
 				</div>
 			</div>
@@ -374,8 +366,8 @@
 				<div class="collapse-title font-semibold">How long does an engagement take?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						A cost or security review takes 1 to 2 weeks. A landing zone or AKS build takes 4 to 8
-						weeks. Ongoing operations run on a monthly retainer with an agreed number of days.
+						A review takes 1 to 2 weeks. A build takes 4 to 8 weeks. Ongoing operations run on a
+						monthly retainer.
 					</p>
 				</div>
 			</div>
@@ -385,9 +377,8 @@
 				<div class="collapse-title font-semibold">How do you charge?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						Fixed price for defined deliverables, day rate for open-ended operations work. Both are
-						written into the scope before I start. Invoices come from SolidPlus Ltd, a UK company,
-						so procurement gets a normal supplier.
+						Fixed price for defined deliverables, day rate for operations. Both are agreed in the
+						scope. Invoices come from SolidPlus Ltd, a UK company.
 					</p>
 				</div>
 			</div>
@@ -397,9 +388,8 @@
 				<div class="collapse-title font-semibold">Can you work inside our tenant and our tooling?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						Yes. I work in your Azure tenant with a guest account and your repositories in Azure
-						DevOps or GitHub, so nothing lives in my environment. I follow your change process and
-						bring my own tooling only where you have none.
+						Yes. I use a guest account in your tenant and your repositories, so nothing lives in my
+						environment.
 					</p>
 				</div>
 			</div>
@@ -409,8 +399,8 @@
 				<div class="collapse-title font-semibold">What happens when you leave?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
-						You keep everything: code, pipelines, a runbook and a recorded walkthrough. If you want
-						me on call afterwards we agree a retainer, but the goal is that you do not need one.
+						You keep the code, pipelines, runbook and recorded walkthrough. A retainer is available
+						if you want me on call.
 					</p>
 				</div>
 			</div>
@@ -428,16 +418,15 @@
 				<SectionHeader
 					number="07"
 					title="Get in Touch"
-					subtitle="Tell me what is broken or what you need built. I reply within two working days."
+					subtitle="Tell me what is broken or what you need built."
 					light
 				/>
 				<p class="text-ink-muted leading-[1.69] max-w-lg mb-8">
-					The first call is free and lasts about 30 minutes. You describe the problem, I ask
-					questions, and by the end you will know whether I am the right person and roughly what
-					it would cost.
+					The first call is free and lasts 30 minutes. By the end you will know whether I am the
+					right person and what it would cost.
 				</p>
 				<div class="space-y-3 text-sm text-ink-subtle">
-					<p>I work freelance alongside a full-time role, so delivery happens evenings and weekends by arrangement and I take one or two clients at a time.</p>
+					<p>I reply within two working days.</p>
 					<p>
 						Prefer email?
 						<a href="mailto:admin@solidplus.tech" class="text-accent hover:underline">
