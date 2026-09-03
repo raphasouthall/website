@@ -22,7 +22,7 @@
 <!-- Inline vector background: five frosted bands GSAP can move independently -->
 <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
 	<svg
-		class="absolute inset-0 w-full h-full"
+		class="absolute inset-0 w-full h-full" shape-rendering="geometricPrecision"
 		viewBox="0 0 1400 350"
 		preserveAspectRatio="xMidYMid slice" overflow="visible"
 		style="opacity: {opacity}; transform: translateX({shiftX}%) scaleX({flipX ? -scale : scale}) scaleY({flipY ? -scale : scale});"

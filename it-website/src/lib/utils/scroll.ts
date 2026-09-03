@@ -10,31 +10,36 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export function initScroll(): () => void {
 	gsap.registerPlugin(ScrollTrigger);
 	ScrollTrigger.config({ ignoreMobileResize: true });
-	ScrollTrigger.normalizeScroll(true);
 	gsap.config({ force3D: true });
+
+	// Snapping and scroll normalisation only on desktop; on phones a section can be taller than
+	// the screen, so snapping would yank the reader away mid-section.
+	const desktop = window.matchMedia('(min-width: 1024px)').matches;
+	if (desktop) ScrollTrigger.normalizeScroll(true);
 
 	const sections = gsap.utils.toArray<HTMLElement>('section[data-snap]');
 	if (sections.length === 0) return () => {};
 
 	const triggers: ScrollTrigger[] = [];
 
-	// Snap to the top of the nearest section after the user stops scrolling
 	const snapPoints = () => {
 		const max = ScrollTrigger.maxScroll(window);
 		return sections.map((s) => Math.min(s.offsetTop, max) / max);
 	};
-	triggers.push(
-		ScrollTrigger.create({
-			snap: {
-				snapTo: (value) => gsap.utils.snap(snapPoints(), value),
-				duration: { min: 0.2, max: 0.6 },
-				delay: 0.05,
-				ease: 'power2.inOut'
-			},
-			start: 0,
-			end: () => ScrollTrigger.maxScroll(window)
-		})
-	);
+	if (desktop) {
+		triggers.push(
+			ScrollTrigger.create({
+				snap: {
+					snapTo: (value) => gsap.utils.snap(snapPoints(), value),
+					duration: { min: 0.2, max: 0.6 },
+					delay: 0.05,
+					ease: 'power2.inOut'
+				},
+				start: 0,
+				end: () => ScrollTrigger.maxScroll(window)
+			})
+		);
+	}
 
 	// Each background band drifts at its own speed while the section passes; content fades in
 	for (const section of sections) {
@@ -76,6 +81,6 @@ export function initScroll(): () => void {
 
 	return () => {
 		for (const t of triggers) t.kill();
-		ScrollTrigger.normalizeScroll(false);
+		if (desktop) ScrollTrigger.normalizeScroll(false);
 	};
 }
