@@ -65,6 +65,14 @@
 	<link rel="canonical" href="https://solidplus.tech/" />
 </svelte:head>
 
+<!-- Liquid-glass displacement filter, referenced by backdrop-filter: url(#lg) -->
+<svg class="absolute w-0 h-0 overflow-hidden" aria-hidden="true">
+	<filter id="lg" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+		<feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="noise" />
+		<feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" />
+	</filter>
+</svg>
+
 <div class="font-body text-base-content bg-base-100 min-h-dvh">
 	<!-- ── Nav ──────────────────────────────────────────── -->
 	<nav

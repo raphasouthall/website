@@ -10,7 +10,7 @@
 	let { label, challenge, solution, outcome, metric, metricLabel }: Props = $props();
 </script>
 
-<div class="card bg-base-200 hairline h-full">
+<div class="card glass-card hairline h-full">
 	<div class="card-body p-6 gap-5">
 		<div class="flex items-start justify-between gap-4">
 			<span class="rounded-full bg-secondary text-ink-muted text-[13px] leading-[1.38] tracking-[0.2px] px-2.5 py-1 whitespace-nowrap">{label}</span>

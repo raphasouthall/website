@@ -129,7 +129,7 @@
 
 			<!-- Visual: fact card -->
 			<div class="hidden lg:block hero-animate-delay-2">
-				<div class="bg-base-200 hairline rounded-xl p-6 max-w-md ml-auto">
+				<div class="glass-card hairline rounded-xl p-6 max-w-md ml-auto">
 					<div class="grid grid-cols-3 gap-6 mb-6">
 						<div>
 							<div class="text-3xl font-bold tracking-[-0.6px]">6+</div>
@@ -247,7 +247,7 @@
 			{#each differentiators as diff, i}
 				<div
 					use:revealOnScroll={{ delay: i * 75 }}
-					class="hairline rounded-xl p-6 bg-base-100 transition-colors"
+					class="glass-card hairline rounded-xl p-6 transition-colors"
 				>
 					<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center mb-4">
 						<IconCheck size={16} class="text-accent" />
@@ -357,7 +357,7 @@
 		</div>
 
 		<div class="space-y-4">
-			<div use:revealOnScroll class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
+			<div use:revealOnScroll class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">What kind of work do you take on?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -368,7 +368,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 50 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
+			<div use:revealOnScroll={{ delay: 50 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">How long does an engagement take?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -379,7 +379,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 100 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
+			<div use:revealOnScroll={{ delay: 100 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">How do you charge?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -390,7 +390,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 150 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
+			<div use:revealOnScroll={{ delay: 150 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">Can you work inside our tenant and our tooling?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
@@ -401,7 +401,7 @@
 				</div>
 			</div>
 
-			<div use:revealOnScroll={{ delay: 200 }} class="collapse collapse-arrow bg-base-200 hairline rounded-xl">
+			<div use:revealOnScroll={{ delay: 200 }} class="collapse collapse-arrow glass-card hairline rounded-xl">
 				<input type="radio" name="faq" />
 				<div class="collapse-title font-semibold">What happens when you leave?</div>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
