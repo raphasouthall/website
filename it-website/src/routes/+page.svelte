@@ -67,7 +67,7 @@
 	<!-- Background image + fade to canvas -->
 	<div
 		class="absolute inset-0 bg-cover bg-center opacity-70"
-		style="background-image: url('/hero-bg.jpg');"
+		style="background-image: url('/hero-bg.svg');"
 	></div>
 	<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black"></div>
 

@@ -14,7 +14,7 @@
 	<div
 		class="absolute -inset-y-[14%] inset-x-0 bg-cover bg-center"
 		data-bg
-		style="background-image: url('/hero-bg.jpg'); opacity: {opacity}; transform: translateX({shiftX}%) scaleX({flipX ? -scale : scale}) scaleY({flipY ? -scale : scale});"
+		style="background-image: url('/hero-bg.svg'); opacity: {opacity}; transform: translateX({shiftX}%) scaleX({flipX ? -scale : scale}) scaleY({flipY ? -scale : scale});"
 	></div>
 	<div class="absolute inset-0 bg-gradient-to-b from-black from-0% via-transparent via-50% to-black to-100%"></div>
 	<div class="absolute inset-x-0 top-0 h-[22%] bg-gradient-to-b from-black to-transparent"></div>
