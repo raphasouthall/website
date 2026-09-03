@@ -10,11 +10,11 @@
 
 	// Each band moves at its own rate; see scroll.ts. Positive = moves with scroll, negative = against.
 	const bands = [
-		{ points: '481,-400 771,-400 -241,750 49,750', fill: 'g1', edge: [771, -400, 49, 750], speed: -0.6 },
-		{ points: '771,-400 1336,-400 49,750 549,750', fill: 'g2', edge: [1336, -400, 549, 750], speed: 0.4 },
-		{ points: '1336,-400 1491,-400 549,750 679,750', fill: 'g3', edge: [1491, -400, 679, 750], speed: -1.1 },
-		{ points: '1491,-400 1651,-400 1651,750 679,750', fill: 'g4', edge: [1651, 400, 879, 750], speed: 0.8 },
-		{ points: '1651,400 1651,750 879,750', fill: 'g5', edge: null, speed: -0.3 }
+		{ points: '481,-400 771,-400 49,750 -241,750', fill: 'g1', edge: [771, -400, 49, 750], speed: -0.6 },
+		{ points: '771,-400 1336,-400 614,750 49,750', fill: 'g2', edge: [1336, -400, 614, 750], speed: 0.4 },
+		{ points: '1336,-400 1491,-400 769,750 614,750', fill: 'g3', edge: [1491, -400, 769, 750], speed: -1.1 },
+		{ points: '1491,-400 1811,-400 1089,750 769,750', fill: 'g4', edge: [1811, -400, 1089, 750], speed: 0.8 },
+		{ points: '1811,-400 2011,-400 1289,750 1089,750', fill: 'g5', edge: [2011, -400, 1289, 750], speed: -0.3 }
 	];
 	const uid = Math.random().toString(36).slice(2, 8);
 	// Phones: show the middle 700 units with extra vertical room so all bands stay in frame
