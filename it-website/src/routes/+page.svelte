@@ -179,7 +179,7 @@
      SERVICES
      ═══════════════════════════════════════════════════════════════ -->
 <section id="services" class="relative py-20 md:py-28 bg-base-100">
-	<SectionBg rotate={180} scale={1.5} opacity={0.8} />
+	<SectionBg rotate={180} scale={1.05} opacity={0.8} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
@@ -203,7 +203,7 @@
      PROCESS
      ═══════════════════════════════════════════════════════════════ -->
 <section id="process" class="relative py-20 md:py-28 bg-base-100">
-	<SectionBg rotate={90} scale={1.8} opacity={0.8} flip />
+	<SectionBg rotate={90} scale={1.1} opacity={0.8} flip />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div use:revealOnScroll>
@@ -232,7 +232,7 @@
      WHY SOLIDPLUS
      ═══════════════════════════════════════════════════════════════ -->
 <section class="relative py-20 md:py-28 bg-base-100">
-	<SectionBg rotate={-30} scale={2.2} opacity={0.8} />
+	<SectionBg rotate={-30} scale={1.15} opacity={0.8} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
@@ -264,7 +264,7 @@
      CASE STUDIES
      ═══════════════════════════════════════════════════════════════ -->
 <section id="results" class="relative py-20 md:py-28 bg-base-100">
-	<SectionBg rotate={270} scale={1.6} opacity={0.8} flip />
+	<SectionBg rotate={270} scale={1.05} opacity={0.8} flip />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
@@ -288,7 +288,7 @@
      ABOUT / FOUNDER
      ═══════════════════════════════════════════════════════════════ -->
 <section id="about" class="relative py-20 md:py-28 bg-base-100">
-	<SectionBg rotate={45} scale={2} opacity={0.8} />
+	<SectionBg rotate={45} scale={1.1} opacity={0.8} />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 			<div use:revealOnScroll>
@@ -347,7 +347,7 @@
      FAQ
      ═══════════════════════════════════════════════════════════════ -->
 <section class="relative py-20 md:py-28 bg-base-100">
-	<SectionBg rotate={210} scale={1.7} opacity={0.8} flip />
+	<SectionBg rotate={210} scale={1.05} opacity={0.8} flip />
 	<div class="relative max-w-3xl mx-auto px-4 md:px-8">
 		<div use:revealOnScroll>
 			<SectionHeader
@@ -419,7 +419,7 @@
      CONTACT
      ═══════════════════════════════════════════════════════════════ -->
 <section id="contact" class="relative py-20 md:py-28 bg-base-100 text-base-content">
-	<SectionBg rotate={0} scale={1.3} opacity={0.8} flip />
+	<SectionBg rotate={0} scale={1} opacity={0.8} flip />
 	<div class="relative max-w-7xl mx-auto px-4 md:px-8">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			<div use:revealOnScroll>
