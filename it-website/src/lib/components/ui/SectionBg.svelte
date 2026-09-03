@@ -10,20 +10,29 @@
 
 	// Each band moves at its own rate; see scroll.ts. Positive = moves with scroll, negative = against.
 	const bands = [
-		{ points: '230,-60 520,-60 300,410 10,410', fill: 'g1', edge: [520, -60, 300, 410], speed: -0.6 },
-		{ points: '520,-60 1085,-60 800,410 300,410', fill: 'g2', edge: [1085, -60, 800, 410], speed: 0.4 },
-		{ points: '1085,-60 1240,-60 930,410 800,410', fill: 'g3', edge: [1240, -60, 930, 410], speed: -1.1 },
-		{ points: '1240,-60 1400,-60 1400,200 1080,410 930,410', fill: 'g4', edge: [1400, 200, 1080, 410], speed: 0.8 },
-		{ points: '1400,200 1400,410 1080,410', fill: 'g5', edge: null, speed: -0.3 }
+		{ points: '481,-400 771,-400 -241,750 49,750', fill: 'g1', edge: [771, -400, 49, 750], speed: -0.6 },
+		{ points: '771,-400 1336,-400 49,750 549,750', fill: 'g2', edge: [1336, -400, 549, 750], speed: 0.4 },
+		{ points: '1336,-400 1491,-400 549,750 679,750', fill: 'g3', edge: [1491, -400, 679, 750], speed: -1.1 },
+		{ points: '1491,-400 1651,-400 1651,750 679,750', fill: 'g4', edge: [1651, 400, 879, 750], speed: 0.8 },
+		{ points: '1651,400 1651,750 879,750', fill: 'g5', edge: null, speed: -0.3 }
 	];
 	const uid = Math.random().toString(36).slice(2, 8);
+	// Phones: show the middle 700 units with extra vertical room so all bands stay in frame
+	let portrait = $state(false);
+	$effect(() => {
+		const mq = window.matchMedia('(max-aspect-ratio: 3/4)');
+		const set = () => (portrait = mq.matches);
+		set();
+		mq.addEventListener('change', set);
+		return () => mq.removeEventListener('change', set);
+	});
 </script>
 
 <!-- Inline vector background: five frosted bands GSAP can move independently -->
 <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
 	<svg
 		class="absolute inset-0 w-full h-full" shape-rendering="geometricPrecision"
-		viewBox="0 0 1400 350"
+		viewBox={portrait ? '350 -350 700 1050' : '0 0 1400 350'}
 		preserveAspectRatio="xMidYMid slice" overflow="visible"
 		style="opacity: {opacity}; transform: translateX({shiftX}%) scaleX({flipX ? -scale : scale}) scaleY({flipY ? -scale : scale});"
 	>
