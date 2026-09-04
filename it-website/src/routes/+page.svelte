@@ -354,60 +354,55 @@
 		</div>
 
 		<div class="space-y-4">
-			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
-				<input type="radio" name="faq" />
-				<div class="collapse-title font-semibold">What kind of work do you take on?</div>
+			<details class="collapse collapse-arrow glass-card hairline rounded-xl">
+				<summary class="collapse-title font-semibold">What kind of work do you take on?</summary>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						Azure platform work, which covers foundations, networking, AKS, Terraform, pipelines,
 						certificates, cost and security. Application development is out of scope.
 					</p>
 				</div>
-			</div>
+			</details>
 
-			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
-				<input type="radio" name="faq" />
-				<div class="collapse-title font-semibold">How long does an engagement take?</div>
+			<details class="collapse collapse-arrow glass-card hairline rounded-xl">
+				<summary class="collapse-title font-semibold">How long does an engagement take?</summary>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						A review takes 1 to 2 weeks. A build takes 4 to 8 weeks. Ongoing operations run on a
 						monthly retainer.
 					</p>
 				</div>
-			</div>
+			</details>
 
-			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
-				<input type="radio" name="faq" />
-				<div class="collapse-title font-semibold">How do you charge?</div>
+			<details class="collapse collapse-arrow glass-card hairline rounded-xl">
+				<summary class="collapse-title font-semibold">How do you charge?</summary>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						Fixed price for defined deliverables, day rate for operations. Both are agreed in the
 						scope. Invoices come from SolidPlus Ltd, a UK company.
 					</p>
 				</div>
-			</div>
+			</details>
 
-			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
-				<input type="radio" name="faq" />
-				<div class="collapse-title font-semibold">Can you work inside our tenant and our tooling?</div>
+			<details class="collapse collapse-arrow glass-card hairline rounded-xl">
+				<summary class="collapse-title font-semibold">Can you work inside our tenant and our tooling?</summary>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						Yes. I use a guest account in your tenant and your repositories, so nothing lives in my
 						environment.
 					</p>
 				</div>
-			</div>
+			</details>
 
-			<div class="collapse collapse-arrow glass-card hairline rounded-xl">
-				<input type="radio" name="faq" />
-				<div class="collapse-title font-semibold">What happens when you leave?</div>
+			<details class="collapse collapse-arrow glass-card hairline rounded-xl">
+				<summary class="collapse-title font-semibold">What happens when you leave?</summary>
 				<div class="collapse-content text-base-content/70 text-sm leading-relaxed">
 					<p>
 						You keep the code, pipelines, runbook and recorded walkthrough. A retainer is available
 						if you want me on call.
 					</p>
 				</div>
-			</div>
+			</details>
 		</div>
 	</div>
 </section>
