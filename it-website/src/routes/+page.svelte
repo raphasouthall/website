@@ -87,8 +87,8 @@
 				</h1>
 
 				<p class="hero-animate-delay-2 text-lg xl:text-xl 2xl:text-2xl text-ink-muted leading-[1.69] max-w-lg 2xl:max-w-xl mb-10">
-					I am Raphael Southall. I build and run Azure infrastructure, AKS clusters and the
-					automation around them for companies running production on Azure.
+					I am Raphael Southall. I build and secure Azure infrastructure, AKS clusters and the
+					AI agents that operate on them, for companies running production on Azure.
 				</p>
 
 				<div class="hero-animate-delay-3 flex flex-wrap gap-4">
@@ -144,7 +144,7 @@
 						</div>
 					</div>
 					<ul class="border-t border-base-300/40 pt-5 space-y-3 text-sm">
-						<li class="flex justify-between gap-4"><span class="text-ink-muted">Stack</span><span>Azure, AKS, Terraform, ADO</span></li>
+						<li class="flex justify-between gap-4"><span class="text-ink-muted">Stack</span><span>Azure, AKS, AI Foundry, Terraform</span></li>
 						<li class="flex justify-between gap-4"><span class="text-ink-muted">Engagements</span><span>Fixed price or day rate</span></li>
 						<li class="flex justify-between gap-4"><span class="text-ink-muted">Availability</span><span>1 to 2 clients at a time</span></li>
 						<li class="flex justify-between gap-4"><span class="text-ink-muted">Reply time</span><span>2 working days</span></li>
@@ -298,8 +298,9 @@
 			<div class="space-y-5">
 				<p class="text-base-content/70 leading-relaxed">
 					<strong class="text-base-content">I am Raphael Southall</strong>, an Azure infrastructure
-					engineer. By day I run the Azure estate for a European logistics company. SolidPlus Ltd is
-					the company I invoice freelance work through.
+					engineer. By day I run the Azure estate for a European logistics company, where my recent
+					work covers Defender remediation, identity clean-up and a pilot of AI agents on Azure AI
+					Foundry. SolidPlus Ltd is the company I invoice freelance work through.
 				</p>
 				<p class="text-base-content/70 leading-relaxed">
 					I also build

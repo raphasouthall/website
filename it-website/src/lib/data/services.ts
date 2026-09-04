@@ -17,10 +17,10 @@ export const services: ServiceItem[] = [
 	},
 	{
 		icon: 'shield',
-		title: 'Security Hardening',
+		title: 'Azure Security',
 		description:
-			'Certificate rotation automated, audit findings turned into tracked work, secrets moved into Key Vault.',
-		tags: ['Key Vault', 'Defender', 'Certificates']
+			'Defender findings triaged and closed, secrets moved into Key Vault, managed identities in place of keys, private endpoints where public access is not needed.',
+		tags: ['Defender', 'Key Vault', 'Private Link']
 	},
 	{
 		icon: 'coins',
@@ -38,9 +38,9 @@ export const services: ServiceItem[] = [
 	},
 	{
 		icon: 'brain',
-		title: 'AI Tooling for Ops Teams',
+		title: 'AI Agents on Azure',
 		description:
-			'AI agents wired into operations work through MCP servers and self-hosted models, with production guardrails.',
-		tags: ['MCP', 'AI Foundry', 'Agents']
+			'Azure AI Foundry agents that read live infrastructure through tools you control, with least-privilege identities, read-only guarantees enforced server-side and a budget cap from day one.',
+		tags: ['AI Foundry', 'Agents', 'Guardrails']
 	}
 ];

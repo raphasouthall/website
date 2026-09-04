@@ -20,12 +20,12 @@ export const caseStudies: CaseStudy[] = [
 		metricLabel: 'automated rotation'
 	},
 	{
-		label: 'Reporting',
-		challenge: 'Monthly infrastructure KPIs were assembled by hand from several tools.',
+		label: 'AI agents',
+		challenge: 'The infrastructure team wanted AI agents that could answer questions from live Azure state without handing a language model root access.',
 		solution:
-			'I wrote scheduled collectors that store each snapshot and publish a dashboard through a deploy pipeline.',
-		outcome: 'The dashboard updates on the first of each month with no one running a script.',
-		metric: 'Monthly',
-		metricLabel: 'hands-off reporting'
+			'I built a pilot on Azure AI Foundry where each agent calls a small API I control, runs as its own managed identity with a custom read-only role, and picks probes from a fixed list rather than writing commands.',
+		outcome: 'Three agents answer firewall, server and documentation questions and one opens draft pull requests for a human to review. API keys are disabled on the whole resource.',
+		metric: '0',
+		metricLabel: 'keys, identity only'
 	}
 ];
