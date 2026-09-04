@@ -266,7 +266,7 @@
 			<SectionHeader
 				number="04"
 				title="Results"
-				subtitle="Recent work from my current role, anonymised. None of it was delivered through SolidPlus."
+				subtitle="Three recent pieces of work."
 			/>
 		</div>
 
